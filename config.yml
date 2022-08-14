@@ -44,7 +44,7 @@ params:
 
     assets:
         # disableHLJS: true                                                    # to disable highlight.js
-        # disableFingerprinting: true
+        disableFingerprinting: true                                            # 尝试解决换行符造成的 SHA256 不一致问题
         favicon: "<link / abs url>"
         favicon16x16: "<link / abs url>"
         favicon32x32: "<link / abs url>"
