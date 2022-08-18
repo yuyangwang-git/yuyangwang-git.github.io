@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>C&#43;&#43; 常量成员函数</title>
+      <link>https://yuyangwang-git.github.io/posts/const-member-functions/</link>
+      <pubDate>Fri, 08 Jul 2022 08:39:32 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/const-member-functions/</guid>
+      <description>理清 C++ primer 里关于常量成员函数部分的绕口令</description>
+    </item>
+    
+    <item>
       <title>二分查找的变化</title>
       <link>https://yuyangwang-git.github.io/posts/binary-search-notes/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>

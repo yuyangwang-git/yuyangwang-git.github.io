@@ -20,5 +20,14 @@
       <description>由于需要将 MATLAB 实现的算法快速移植到 QT 客户端中，研究了一下如何利用 MATLAB Coder 将算法转译为 C++ 源码</description>
     </item>
     
+    <item>
+      <title>C&#43;&#43; 常量成员函数</title>
+      <link>https://yuyangwang-git.github.io/posts/const-member-functions/</link>
+      <pubDate>Fri, 08 Jul 2022 08:39:32 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/const-member-functions/</guid>
+      <description>理清 C++ primer 里关于常量成员函数部分的绕口令</description>
+    </item>
+    
   </channel>
 </rss>
