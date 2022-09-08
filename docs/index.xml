@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 10 Aug 2022 19:14:52 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 20:37:29 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下构建STM32开发环境</title>
+      <link>https://yuyangwang-git.github.io/posts/windows%E4%B8%8B%E6%9E%84%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Mon, 05 Sep 2022 20:37:29 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/windows%E4%B8%8B%E6%9E%84%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <description>Keil，狗都不用</description>
+    </item>
+    
     <item>
       <title>使用 MATLAB Coder 生成 Cpp 源码</title>
       <link>https://yuyangwang-git.github.io/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</link>

@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuyangwang-git.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/categories/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/categories/embedded/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/posts/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/tags/stm32/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/tags/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/posts/windows%E4%B8%8B%E6%9E%84%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/</loc>
+    <lastmod>2022-09-05T20:37:29+08:00</lastmod>
+  </url><url>
     <loc>https://yuyangwang-git.github.io/categories/algorithm/</loc>
     <lastmod>2022-08-10T19:14:52+08:00</lastmod>
   </url><url>
-    <loc>https://yuyangwang-git.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2022-08-10T19:14:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yuyangwang-git.github.io/categories/</loc>
-    <lastmod>2022-08-10T19:14:52+08:00</lastmod>
-  </url><url>
     <loc>https://yuyangwang-git.github.io/tags/matlab/</loc>
-    <lastmod>2022-08-10T19:14:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yuyangwang-git.github.io/posts/</loc>
-    <lastmod>2022-08-10T19:14:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yuyangwang-git.github.io/tags/</loc>
-    <lastmod>2022-08-10T19:14:52+08:00</lastmod>
-  </url><url>
-    <loc>https://yuyangwang-git.github.io/</loc>
     <lastmod>2022-08-10T19:14:52+08:00</lastmod>
   </url><url>
     <loc>https://yuyangwang-git.github.io/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</loc>

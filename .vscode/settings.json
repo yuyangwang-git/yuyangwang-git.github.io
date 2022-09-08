@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.xyz": "ssh_config",
+        "*.html": "html",
+        "*.py": "python",
+        "*.txt": "makefile",
+        "*.ino": "cpp",
+        "ostream": "cpp"
+    }
+}
