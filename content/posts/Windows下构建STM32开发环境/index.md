@@ -48,9 +48,17 @@ cover:
 
 除了上面两个之外，还需要安装：
 
-* Mingw-w64
+* make
 * gcc-arm-none-eabi
 * Git Bash
+
+> Windows 并不提供 make 命令，而 Mingw-w64 包含了了`mingw64-make.exe`程序，因此可以在安装 Mingw-w64 后：
+>
+> 1. 将安装目录`bin`文件夹下的`mingw64-make.exe`复制一份，并重命名为`make.exe`；
+>
+> 2. 将`bin`文件夹添加到环境变量；
+>
+> 3. 在命令行执行`make -v`，确认环境变量配置正确。
 
 ## 环境配置
 
