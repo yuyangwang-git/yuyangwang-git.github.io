@@ -27,9 +27,9 @@ cover:
 >
 > PlatformIO 是以开发板而非芯片为中心的 IDE，这就导致它更适合于 Arduino 这类开源硬件的开发，和实际的嵌入式开发需求不符合。PlatformIO 的开发者似乎也意识到了这个问题，在库里提供了部分 generic 配置文件，但覆盖面太窄了，并没有 STM32L4 的 generic 配置文件，手写`.ini`文件又太蠢了一些。
 >
-> **为什么不用 stm32-for-vscode 和 cortex-debug 插件？**
+> **为什么不用 stm32-for-vscode 和 Cortex-Debug 插件？**
 >
-> 第一次使用还是手动写写配置文件比较好，能熟悉一下每个工具，这两个插件自动完成了所有工作，不利于前期学习。
+> 第一次使用还是手动写写配置文件比较好，能熟悉一下每个工具。安装完这两个插件后就直接自动完成了所有工作，不利于前期学习。
 
 ## 大体流程
 
@@ -39,20 +39,26 @@ cover:
 
 3. 在 VS Code 中调用 make 完成交叉编译
 
+4. 使用 OpenOCD 完成程序的烧录和调试
+
+![flowchart](img/flowchart.svg#center)
+
+> 图中横线上方加粗的内容是脱离 Keil 开发和调试 STM32 程序必需的工具，横线下方为推荐的工具和插件。
+
 ## 准备工作
 
-安装必须的工具：
+安装必需的工具：
 
-* VS Code
 * STM32CubeMX
+* VS Code
 
 除了上面两个之外，还需要安装：
 
 * make
-* gcc-arm-none-eabi
+* Arm GNU Toolchain
 * Git Bash
 
-> Windows 并不提供 make 命令，而 Mingw-w64 包含了了`mingw64-make.exe`程序，因此可以在安装 Mingw-w64 后：
+> Windows 并不提供 make 命令，而 Mingw-w64 包含了了`mingw64-make.exe`程序，因此可以通过安装 Mingw-w64 来安装 make：
 >
 > 1. 将安装目录`bin`文件夹下的`mingw64-make.exe`复制一份，并重命名为`make.exe`；
 >
@@ -60,11 +66,19 @@ cover:
 >
 > 3. 在命令行执行`make -v`，确认环境变量配置正确。
 
+> 现在已经 2022 年了，网络上有不少互相抄来抄去教程，要求读者安装 GNU Arm Embedded Toolchain，然后甩一个旧版的下载链接。
+>
+> 但实际上 Arm GNU Toolchain 已经取代了 GNU Arm Embedded Toolchain，后者被 Arm 标记为 discontinued，没有特殊理由当然应优先选择最新的 Toolchain。
+>
+>  — <cite>Arm GNU Toolchain Official Site[^1]</cite>
+
+[^1]: [Arm GNU Toolchain Downloads](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads).
+
 ## 环境配置
 
 打开 STM32CubeMX，这里我们已经有了一个名为 Test 的工程，切换到 Project Manager，将 Toolchain/IDE 修改为 Makefile：
 
-![STM32CubeMX](img/STM32CubeMX.png)
+![STM32CubeMX](img/STM32CubeMX.png#center)
 
 修改完成后生成代码，在输出目录（我这里是`E:\Test`）中，可以看到目录下已经有了一个 Makefile 文件。
 
@@ -80,7 +94,7 @@ make: *** [Makefile:179: build] Error 2
 
 这里产生了一个报错，提示没有找到 build 目录，为什么会产生这个错误我们在后面会解释，这里先不管它，在`E:\Test`目录下我们手动创建一个文件夹`build`，再次执行命令`make`：
 
-![make](img/make.png)
+![make](img/make.png#center)
 
 如果最终得到以下输出结果，则说明程序编译没有任何问题，`Mingw-w64`和`gcc-arm-none-eabi`均已被正确安装。
 
@@ -232,7 +246,7 @@ process_begin: CreateProcess(NULL, mkdir build, ...) failed.
 
 这里要重点注意的主要是`defines`和`compilerPath`两个选项（至于`name`随便填就好了），`defines`实际上就是在 Keil 中填写的全局宏定义标识符（Preprocessor Symbols -> Define）：
 
-![Keil Defines](img/Keil.png)
+![Keil Defines](img/Keil.png#center)
 
 而`compilerPath`则是我们之前安装的 Mingw-w64 编译器的路径，按实际情况填写就行。
 
