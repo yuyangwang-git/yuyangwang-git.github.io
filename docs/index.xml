@@ -10,9 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 16 Sep 2022 20:46:17 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>STM32启动流程</title>
+      <title>ADC 量化噪声</title>
+      <link>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
+      <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</guid>
+      <description>在一些 ADC 的应用笔记中常看到信噪比计算公式 SNR = 6.02N + 1.76dB，恰巧又在同学的课题里看到了该公式，于是深挖了一下这个公式的来龙去脉．</description>
+    </item>
+    
+    <item>
+      <title>STM32 启动流程</title>
       <link>https://yuyangwang-git.github.io/posts/stm32%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Fri, 16 Sep 2022 20:46:17 +0800</pubDate>
       
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>Windows下构建STM32开发环境</title>
+      <title>Windows 下构建 STM32 开发环境</title>
       <link>https://yuyangwang-git.github.io/posts/windows%E4%B8%8B%E6%9E%84%E5%BB%BAstm32%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Mon, 05 Sep 2022 20:37:29 +0800</pubDate>
       

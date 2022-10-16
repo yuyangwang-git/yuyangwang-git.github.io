@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ADC on Yuyang Wang&#39;s Blog</title>
+    <link>https://yuyangwang-git.github.io/tags/adc/</link>
+    <description>Recent content in ADC on Yuyang Wang&#39;s Blog</description>
+    <image>
+      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/adc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADC 量化噪声</title>
+      <link>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
+      <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</guid>
+      <description>在一些 ADC 的应用笔记中常看到信噪比计算公式 SNR = 6.02N + 1.76dB，恰巧又在同学的课题里看到了该公式，于是深挖了一下这个公式的来龙去脉．</description>
+    </item>
+    
+  </channel>
+</rss>

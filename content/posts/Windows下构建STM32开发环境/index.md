@@ -1,5 +1,5 @@
 ---
-title: "Windows下构建STM32开发环境"
+title: "Windows 下构建 STM32 开发环境"
 date: 2022-09-05T20:37:29+08:00
 draft: false
 

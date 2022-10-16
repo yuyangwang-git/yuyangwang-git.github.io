@@ -1,5 +1,5 @@
 ---
-title: "STM32启动流程"
+title: "STM32 启动流程"
 date: 2022-09-16T20:46:17+08:00
 draft: true
 
@@ -47,7 +47,7 @@ cover:
 
 [^2]: [STM32 microcontroller system memory boot mode](https://www.st.com/resource/zh/application_note/an2606-stm32-microcontroller-system-memory-boot-mode-stmicroelectronics.pdf).
 
-前面提到，ST 在生产时向系统存储器中写入了 bootloader，该 bootloader 的主要任务就是控制芯片通过片上外设（USART，USB，I2C，SPI 等）将用户编写的程序下载到片内主存储器中。
+前面提到，ST 在生产时向系统存储器中写入了 bootloader，该 bootloader 的主要任务就是控制芯片通过片上外设（USART，USB，I2C，SPI 等）将用户编写的程序下载到片内主存储器中（这种下载程序的方式也被称之为 ISP）。
 
 bootloader 支持的片上外设和对应的 Appication Note 可参考下表：
 
