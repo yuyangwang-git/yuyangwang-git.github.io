@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuyangwang-git.github.io/posts/</loc>
+    <lastmod>2022-10-23T18:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/</loc>
+    <lastmod>2022-10-23T18:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://yuyangwang-git.github.io/posts/%E5%85%83%E4%BB%B6%E8%AF%AF%E5%B7%AE%E5%AF%B9cmrr%E7%9A%84%E5%BD%B1%E5%93%8D/</loc>
+    <lastmod>2022-10-23T18:34:17+08:00</lastmod>
+  </url><url>
     <loc>https://yuyangwang-git.github.io/tags/adc/</loc>
     <lastmod>2022-10-13T16:01:24+08:00</lastmod>
   </url><url>
@@ -14,16 +23,10 @@
     <loc>https://yuyangwang-git.github.io/categories/embedded/</loc>
     <lastmod>2022-10-13T16:01:24+08:00</lastmod>
   </url><url>
-    <loc>https://yuyangwang-git.github.io/posts/</loc>
-    <lastmod>2022-10-13T16:01:24+08:00</lastmod>
-  </url><url>
     <loc>https://yuyangwang-git.github.io/categories/signal-processing/</loc>
     <lastmod>2022-10-13T16:01:24+08:00</lastmod>
   </url><url>
     <loc>https://yuyangwang-git.github.io/tags/</loc>
-    <lastmod>2022-10-13T16:01:24+08:00</lastmod>
-  </url><url>
-    <loc>https://yuyangwang-git.github.io/</loc>
     <lastmod>2022-10-13T16:01:24+08:00</lastmod>
   </url><url>
     <loc>https://yuyangwang-git.github.io/tags/stm32/</loc>

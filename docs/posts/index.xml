@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Oct 2022 18:34:17 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元件误差对 CMRR 的影响</title>
+      <link>https://yuyangwang-git.github.io/posts/%E5%85%83%E4%BB%B6%E8%AF%AF%E5%B7%AE%E5%AF%B9cmrr%E7%9A%84%E5%BD%B1%E5%93%8D/</link>
+      <pubDate>Sun, 23 Oct 2022 18:34:17 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/%E5%85%83%E4%BB%B6%E8%AF%AF%E5%B7%AE%E5%AF%B9cmrr%E7%9A%84%E5%BD%B1%E5%93%8D/</guid>
+      <description>一个比较麻烦的模电计算题</description>
+    </item>
+    
     <item>
       <title>ADC 量化噪声</title>
       <link>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
