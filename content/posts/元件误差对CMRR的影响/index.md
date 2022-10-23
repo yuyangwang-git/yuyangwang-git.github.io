@@ -1,13 +1,16 @@
 ---
 title: "元件误差对 CMRR 的影响"
 date: 2022-10-23T18:34:17+08:00
-draft: true
+draft: false
 
 summary: 一个比较麻烦的模电计算题
 description: 
+
+cover: 
+    image: 'img/differential_amplifier.svg'
 ---
 
-## Qusetion
+## Question
 
 > An op-amp differential amplifier is built using four identical resistors, each having a tolerance of ±5%. Calculate the worst possible CMRR.
 
@@ -15,13 +18,21 @@ description:
 
 ![differential amplifier](img/differential_amplifier.svg#center)
 
-对于具有差分输入端 $u_+$ 及 $u_-$ 的理想运算放大器，设其开环电压增益为 $A_uo$ ，则其输入输出满足：
+考虑 $CMRR$ 的倍数定义：
+
+$$
+CMRR = \frac{A_d}{A_c}
+$$
+
+为了求解该问题，我们可以先求出电路的共模增益 $A_c$ 及差模增益 $A_d$，然后计算电路的 $CMRR$．
+
+为了求出 $A_c$ 及 $A_d$，就要找出运放的输入输出关系，对于具有差分输入端 $u_+$ 及 $u_-$ 的理想运算放大器，设其开环电压增益为 $A_{uo}$ ，则其输入输出满足：
 
 $$
 U_o = A_{uo}(U_+ - U_-)
 $$
 
-而我们知道：
+利用分压定律很容易得到：
 
 $$
 \begin{aligned}
@@ -37,7 +48,7 @@ $$
 U_o &= A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}(U_{i-} - U_{o})) \\\
     &= A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}(U_{i-} - U_{o})) \\\
 U_o(1- A_{uo}\frac{(R_1 + R_2)R_4}{R_3 + R_4}) &= A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-}) \\\
-U_o &= \frac{A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-})}{(1- A_{uo}\frac{(R_1 + R_2)R_4}{R_3 + R_4})} \\\
+U_o &= \frac{A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-})}{1- A_{uo}\frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
 U_o &= \frac{\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-}}{\frac{1}{A_{uo}} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
 \end{aligned}
 $$
@@ -46,7 +57,7 @@ $$
 
 $$
 \begin{aligned}
-\lim_{A_{uo} \to +\infty}U_o &= \frac{\frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-} - \frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+}}{\frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
+\lim\limits_{A_{uo} \to +\infty} U_o &= \frac{\frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-} - \frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+}}{\frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
     &= \frac{(R_1 + R_2)R_4U_{i-} - \frac{(R_3 + R_4)^2R_2}{R_1 + R_2}U_{i+}}{(R_1 + R_2)R_4} \\\
     &= U_{i-} - \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}U_{i+}
 \end{aligned}
@@ -61,10 +72,7 @@ $$
 显然有：
 
 $$
-\begin{aligned}
-A_c &= \frac{U_o}{U_i} \\\
-    &= 1 - \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
-\end{aligned}
+A_c = \frac{U_o}{U_i} = 1 - \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
 $$
 
 假设输入信号为差模信号（即不含直流分量的交流信号），不妨设：
@@ -79,10 +87,7 @@ $$
 自然有：
 
 $$
-\begin{aligned}
-A_d &= \frac{U_o}{U_i}\\\
-    &= -\frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
-\end{aligned}
+A_d = \frac{U_o}{U_i} = -\frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
 $$
 
 回到定义：
