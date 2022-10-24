@@ -46,11 +46,8 @@ $$
 $$
 \begin{aligned}
 U_o &= A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-} - \frac{R_3}{R_3 + R_4}U_o) \\\
-
 U_o + A_{uo}\frac{R_3}{R_3 + R_4}U_o &= A_{uo}(\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-})\\\
-
 U_o &= \frac{A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-})}{1 + A_{uo}\frac{R_3}{R_3 + R_4}} \\\
-
 U_o &= \frac{\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-}}{\frac{1}{A_{uo}} + \frac{R_3}{R_3 + R_4}} \\\
 \end{aligned}
 $$
@@ -97,9 +94,7 @@ $$
 $$
 \begin{aligned}
 CMRR &= \frac{A_d}{A_c} \\\
-
 &= \frac{1}{2} \frac{\frac{R_4}{R_3}+\frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3}}{\frac{R_4}{R_3} - \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3}} \\\
-
 &= \frac{1}{2} \frac{1 + \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_4}}{1 - \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_4}}
 \end{aligned}
 $$
