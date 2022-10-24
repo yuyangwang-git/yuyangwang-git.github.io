@@ -37,7 +37,7 @@ $$
 $$
 \begin{aligned}
 U_+ &= \frac{R_2}{R_1 + R_2}U_{i+} \\\
-U_- &= \frac{R_4}{R_3 + R_4}(U_{i-} - U_{o}) \\\
+U_- &= \frac{R_4}{R_3 + R_4}U_{i-} + \frac{R_3}{R_3 + R_4}U_o  \\\
 \end{aligned}
 $$
 
@@ -45,11 +45,13 @@ $$
 
 $$
 \begin{aligned}
-U_o &= A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}(U_{i-} - U_{o})) \\\
-    &= A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}(U_{i-} - U_{o})) \\\
-U_o(1- A_{uo}\frac{(R_1 + R_2)R_4}{R_3 + R_4}) &= A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-}) \\\
-U_o &= \frac{A_{uo} (\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-})}{1- A_{uo}\frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
-U_o &= \frac{\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-}}{\frac{1}{A_{uo}} - \frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
+U_o &= A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-} - \frac{R_3}{R_3 + R_4}U_o) \\\
+
+U_o + A_{uo}\frac{R_3}{R_3 + R_4}U_o &= A_{uo}(\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-})\\\
+
+U_o &= \frac{A_{uo} (\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-})}{1 + A_{uo}\frac{R_3}{R_3 + R_4}} \\\
+
+U_o &= \frac{\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-}}{\frac{1}{A_{uo}} + \frac{R_3}{R_3 + R_4}} \\\
 \end{aligned}
 $$
 
@@ -57,9 +59,9 @@ $$
 
 $$
 \begin{aligned}
-\lim\limits_{A_{uo} \to +\infty} U_o &= \frac{\frac{(R_1 + R_2)R_4}{R_3 + R_4}U_{i-} - \frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+}}{\frac{(R_1 + R_2)R_4}{R_3 + R_4}} \\\
-    &= \frac{(R_1 + R_2)R_4U_{i-} - \frac{(R_3 + R_4)^2R_2}{R_1 + R_2}U_{i+}}{(R_1 + R_2)R_4} \\\
-    &= U_{i-} - \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}U_{i+}
+\lim\limits_{A_{uo} \to +\infty} U_o &= \frac{\frac{R_2}{R_1 + R_2}U_{i+} - \frac{R_4}{R_3 + R_4}U_{i-}}{\frac{R_3}{R_3 + R_4}} \\\
+    &= \frac{\frac{(R_3 + R_4)R_2}{R_1 + R_2}U_{i+} - R_4U_{i-}}{R_3} \\\
+    &= \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3}U_{i+} - \frac{R_4}{R_3} U_{i-}
 \end{aligned}
 $$
 
@@ -72,7 +74,7 @@ $$
 显然有：
 
 $$
-A_c = \frac{U_o}{U_i} = 1 - \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
+A_c = \frac{U_o}{U_i} = \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3} - \frac{R_4}{R_3}
 $$
 
 假设输入信号为差模信号（即不含直流分量的交流信号），不妨设：
@@ -87,34 +89,38 @@ $$
 自然有：
 
 $$
-A_d = \frac{U_o}{U_i} = -\frac{1}{2}-\frac{(R_3 + R_4)^2R_2}{2(R_1 + R_2)^2R_4}
+A_d = \frac{U_o}{U_i} = -\frac{1}{2}\frac{R_4}{R_3}-\frac{(R_3 + R_4)R_2}{2(R_1 + R_2)R_3}
 $$
 
 回到定义：
 
 $$
-CMRR = \frac{A_d}{A_c} = \frac{1+\frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}}{\frac{2(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4} - 2}
+\begin{aligned}
+CMRR &= \frac{A_d}{A_c} \\\
+
+&= \frac{1}{2} \frac{\frac{R_4}{R_3}+\frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3}}{\frac{R_4}{R_3} - \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_3}} \\\
+
+&= \frac{1}{2} \frac{1 + \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_4}}{1 - \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_4}}
+\end{aligned}
 $$
 
 问题转化为求 $CMRR$ 的最小值问题，不妨记：
 
 $$
-k = \frac{(R_3 + R_4)^2R_2}{(R_1 + R_2)^2R_4}
+\begin{aligned}
+k &= \frac{(R_3 + R_4)R_2}{(R_1 + R_2)R_4} \\\
+&= \frac{(\frac{R_2R_3}{R_1R_4} + \frac{R_2}{R_1})}{1 + \frac{R_2}{R_1}} \\\
+&= \frac{\frac{R_3}{R_4} + 1}{\frac{R_1}{R_2} + 1}
+\end{aligned}
 $$
 
 那么有：
 
 $$
-CMRR = \frac{k + 1}{2k - 2} = \frac{1}{2} + \frac{1}{ k - 1 }
+CMRR = \frac{k + 1}{2 - 2k} = - \frac{1}{2} + \frac{1}{ 1 - k }
 $$
 
-只需求 $k$ 最大值，显然，当 $R_3$ 和 $R_4$ 取最大值 $1.05R$，且 $R_1$ 和 $R_2$ 取最小值 $0.95R$ 时得最值，即：
-
-$$
-k = \frac{(2.1R)^2\times0.95R}{(1.9R)^2\times1.05R} \approx 1.105263 ...
-$$
-
-带回定义，可得：
+只需求 $k$ 最小值，显然，当 $R_1$ 和 $R_4$ 取最大值 $1.05R$，且 $R_2$ 和 $R_3$ 取最小值 $0.95R$ 时得最值，即得：
 
 $$
 CMRR = 10
