@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/categories/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 10:18:38 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/categories/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EFR32 开发环境搭建</title>
+      <link>https://yuyangwang-git.github.io/posts/efr32/</link>
+      <pubDate>Thu, 09 Mar 2023 10:18:38 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/efr32/</guid>
+      <description>基于 EFR32BG22C112F352GM32</description>
+    </item>
+    
     <item>
       <title>ADC 量化噪声</title>
       <link>https://yuyangwang-git.github.io/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
