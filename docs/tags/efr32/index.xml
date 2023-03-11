@@ -10,13 +10,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 09 Mar 2023 10:18:38 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/efr32/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 22:28:48 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/efr32/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>EFR32 开发环境搭建</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32/</link>
+      <title>EFR32 入门笔记 2: 点亮 LED 灯</title>
+      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
+      <pubDate>Fri, 10 Mar 2023 22:28:48 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
+      <description>前面简单讲了开发环境的搭建和官方模板的结构，这里尝试写一个简单的点灯程序</description>
+    </item>
+    
+    <item>
+      <title>EFR32 入门笔记 1: 开发环境搭建</title>
+      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 09 Mar 2023 10:18:38 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32/</guid>
+      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>基于 EFR32BG22C112F352GM32</description>
     </item>
     
