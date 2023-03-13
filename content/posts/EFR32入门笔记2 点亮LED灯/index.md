@@ -4,7 +4,7 @@ date: 2023-03-10T22:28:48+08:00
 draft: true
 
 summary: 前面简单讲了开发环境的搭建和官方模板的结构，这里尝试写一个简单的点灯程序
-description: 
+description: 本文参考官方例程 Platform - Blink Bare-metal
 
 tags: ["C", "EFR32"]
 categories: ["embedded"]

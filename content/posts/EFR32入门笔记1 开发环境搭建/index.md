@@ -179,6 +179,10 @@ int main(void)
 }
 ```
 
+## 使用 VSCode 编辑程序
+
+主要是 `c_cpp_properties.json` 文件的修改，待更。
+
 ## 烧录程序时遇到的问题
 
 将设备通过 SWD 接口连接到 J-Link （笔者使用的是 J-Link v11），安装 J-Link 驱动后，使用 Simplicity Commander 时提示：

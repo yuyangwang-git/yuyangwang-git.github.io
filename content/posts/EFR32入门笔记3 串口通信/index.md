@@ -4,7 +4,7 @@ date: 2023-03-13T21:31:51+08:00
 draft: true
 
 summary: 看明白官方项目结构后也没多难，官方文档写的很清晰
-description: 
+description: 本文参考官方例程 Platform - I/O stream USART Bare-metal
 
 tags: ["C", "EFR32"]
 categories: ["embedded"]
@@ -15,7 +15,7 @@ cover:
 
 ## USART 外设的使用
 
-模仿[上一篇文章](https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/)的思路，新建空项目，并创建如下几个文件：
+参考[上一篇文章](https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/)的思路，新建空项目，并创建如下几个文件：
 
 ```bash
 ## 已有
