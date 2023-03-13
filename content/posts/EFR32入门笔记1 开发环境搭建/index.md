@@ -1,7 +1,7 @@
 ---
 title: "EFR32 入门笔记 1: 开发环境搭建"
 date: 2023-03-09T10:18:38+08:00
-draft: true
+draft: false
 
 summary: 来试试组里一直说很难的 EFR32
 description: 基于 EFR32BG22C112F352GM32
@@ -178,3 +178,47 @@ int main(void)
   sl_system_kernel_start();
 }
 ```
+
+## 烧录程序时遇到的问题
+
+将设备通过 SWD 接口连接到 J-Link （笔者使用的是 J-Link v11），安装 J-Link 驱动后，使用 Simplicity Commander 时提示：
+
+```bash
+WARNING: Could not connect to target device
+```
+
+于是打开 J-Link Commander，输入 connect，发现还是无法连接：
+
+```bash
+- Iterating through AP map to find AHB-AP to use
+......
+......
+......
+- ERROR: Failed to connect.
+Could not establish a connection to target.
+```
+
+接着查阅官网资料，官方论坛建议在命令行中执行：
+
+```bash
+# Simplicity Studio 的安装目录
+$ cd 'D:\Program Files\SiliconLabs\SimplicityStudio\v5\developer\adapter_packs\commander'
+# --device 后指定芯片型号
+$ .\commander device recover --device=EFR32BG22C112F352GM32
+```
+
+随后得到了：
+
+```bash
+Recovering "bricked" device...
+Resetting device...
+Attempting to connect to DCI...
+Success after 1 attempts (6 ms)
+Running device erase command...
+Success after 1 attempts (74 ms)
+Resetting device...
+Device recovery successful.
+DONE
+```
+
+此时就可以使用 Simplicity Commander 烧录程序了。

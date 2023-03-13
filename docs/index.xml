@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 10 Mar 2023 22:28:48 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 21:31:51 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EFR32 入门笔记 3: 串口通信</title>
+      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</link>
+      <pubDate>Mon, 13 Mar 2023 21:31:51 +0800</pubDate>
+      
+      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</guid>
+      <description>看明白官方项目结构后也没多难，官方文档写的很清晰</description>
+    </item>
+    
     <item>
       <title>EFR32 入门笔记 2: 点亮 LED 灯</title>
       <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
