@@ -15,6 +15,22 @@ cover:
 
 ## USART 外设的使用
 
+首先是安装 Service - I/O Stream: USART
+
+![I/O: stream USART](img/IOStreamUSART.png#center)
+
+注意一定不要手贱把名称填写为：`INSTANCES`，不然编译会报错：
+
+```bash
+error: conflicting types for 'sl_iostream_usart_init_instances'
+```
+
+~~这是因为和库里某个函数重名了，可能官方也没想到还能这么重名~~
+
+然后根据需要调整串口的配置，比如流量控制（RTS & CTS），波特率，引脚啥啥啥的。
+
+![I/O: stream USART](img/IOStreamUSART.png#center)
+
 参考[上一篇文章](https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/)的思路，新建空项目，并创建如下几个文件：
 
 ```bash
@@ -55,14 +71,8 @@ void app_process_action(void)
 #ifndef APP_USART_COMMUNICATION_H
 #define APP_USART_COMMUNICATION_H
 
-/***************************************************************************//**
- * Initialize iostream usart
- ******************************************************************************/
 void app_usart_communication_init(void);
 
-/***************************************************************************//**
- * iostream usart ticking function
- ******************************************************************************/
 void app_usart_communication_action(void);
 
 #endif  // APP_USART_COMMUNICATION_H
