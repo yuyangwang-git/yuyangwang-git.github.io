@@ -41,6 +41,7 @@ params:
     hideSummary: false
     showtoc: true                                                              # show table of contents on blog post
     tocopen: true
+    math: true
 
     assets:
         # disableHLJS: true                                                    # to disable highlight.js

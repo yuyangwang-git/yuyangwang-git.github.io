@@ -37,7 +37,9 @@ ADC 转换结果将会被写入到一个 FIFO 队列当中，该队列的容量�
 
 IADC 输出结果的分辨率由两个参数 $OversamplingRatio$ 和 $DigitalAveraging$ 决定：
 
-$$Output Resolution = 11 + log_2(OversamplingRatio \times DigitalAveraging)$$
+$$
+Output Resolution = 11 + log_2(OversamplingRatio \times DigitalAveraging)
+$$
 
 $OversamplingRatio$ 为过采样比（OSR），提高过采样比可以改善 ADC 的积分非线性（INL）和微分非线性（DNL）误差，并减小噪声的影响——显然此时转换速度也会下降。该过程为一个模拟过程。
 
