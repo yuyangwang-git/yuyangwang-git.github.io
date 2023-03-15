@@ -19,7 +19,7 @@ cover:
 
 ![IADC](img/IADC.jpg#center)
 
-Sillicon Labs 并未给 IADC 撰写相应的 Service or Driver，因此必须在底层外设库 `emlib` 上做开发。
+和 USART 等外设不同，Sillicon Labs 并未给 IADC 提供相应的 Service 或 Driver，因此必须在底层外设库 `emlib` 上做开发。
 
 ### 基于轮询的使用方式
 
