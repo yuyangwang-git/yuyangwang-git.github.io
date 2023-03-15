@@ -9,7 +9,7 @@ description: 有手就行
 tags: ["C", "EFR32"]
 categories: ["embedded"]
 
-cover: 
+cover:
     image: 'img/cover.jpg'
 ---
 
@@ -44,6 +44,20 @@ $$
 $OversamplingRatio$ 为过采样比（OSR），提高过采样比可以改善 ADC 的积分非线性（INL）和微分非线性（DNL）误差，并减小噪声的影响——显然此时转换速度也会下降。该过程为一个模拟过程。
 
 $Digital Averaging$ 为移动平均，硬件会自动对转换结果（1、2、4、8 或 16 个采样结果）求平均值，求完均值后再将结果写入 FIFO 队列。该过程为一个数字过程。
+
+> 什么是微分非线性（differential nonlinearity）和积分非线性（integral nonlinearity）？
+>
+> Analog-to-Digital Converter (ADC) Differential Non-Linearity (DNL) is defined as the maximum and minimum difference in the step width between the actual transfer function and the perfect transfer function. Non-linearity produces quantization steps with varying widths, some narrower and some wider.
+>
+> ![ADC DNL](img/ADCDNL.png#center)
+>
+> Analog-to-Digital Converter (ADC) Integral Non-Linearity (INL) is defined as the maximum vertical difference between the actual and the ideal curve. It indicates the amount of deviation of the actual curve from the ideal transfer curve.
+>
+> ![ADC INL](img/ADCINL.png#center)
+>
+>  — <cite>ADC Differential Non-linearity[^1]</cite>
+
+[^1]: [ADC Differential Non-linearity - Microchip Developer Helper](https://microchipdeveloper.com/adc:adc-differential-nonlinearity).
 
 ### 基于轮询的使用方式
 
