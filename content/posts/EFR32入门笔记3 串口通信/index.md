@@ -19,7 +19,7 @@ cover:
 
 首先是安装 Service - I/O Stream: USART
 
-![I/O: stream USART](img/IOStreamUSART.png#center)
+![I/O: stream USART](img/IOStreamUSART.jpg#center)
 
 注意一定不要手贱把名称填写为：`INSTANCES`，不然编译会报错：
 
@@ -31,7 +31,7 @@ error: conflicting types for 'sl_iostream_usart_init_instances'
 
 然后根据需要调整串口的配置，比如流量控制（RTS & CTS），波特率，引脚啥啥啥的。
 
-![I/O: stream USART](img/IOStreamConfig.png#center)
+![I/O: stream USART](img/IOStreamConfig.jpg#center)
 
 参考 [上一篇文章](https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/) 的思路，新建空项目，并创建如下几个文件：
 
@@ -185,7 +185,7 @@ void USART_Tx(USART_TypeDef *usart, uint8_t data)
 
 为此，只需安装 Serviece - I/O Stream: Retarget STDIO
 
-![I/O: stream: Retarget STDIO](img/IOStreamRetargetSTDIO.png#center)
+![I/O: stream: Retarget STDIO](img/IOStreamRetargetSTDIO.jpg#center)
 
 安装完成就可以直接使用 `printf()` 函数了：
 
