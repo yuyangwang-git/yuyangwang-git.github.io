@@ -17,7 +17,7 @@ cover:
 
 参考文档 [AN1189: Incremental Analog to Digital Converter (IADC)](https://www.silabs.com/documents/public/application-notes/an1189-efr32-iadc.pdf)
 
-按惯例，先安装必须的依赖包：
+按惯例，先安装必需的依赖包：
 
 ![IADC](img/IADC.jpg#center)
 
@@ -55,7 +55,7 @@ $Digital Averaging$ 为移动平均，硬件会自动对转换结果（1、2、4
 >
 > ![ADC INL](img/ADCINL.png#center)
 >
->  — <cite>ADC Differential Non-linearity[^1]</cite>
+> — <cite>ADC Differential Non-linearity[^1]</cite>
 
 [^1]: [ADC Differential Non-linearity - Microchip Developer Helper](https://microchipdeveloper.com/adc:adc-differential-nonlinearity).
 
@@ -69,7 +69,7 @@ $Digital Averaging$ 为移动平均，硬件会自动对转换结果（1、2、4
 #include "em_iadc.h"
 
 #define CLK_SRC_ADC_FREQ        20000000  // CLK_SRC_ADC
-#define CLK_ADC_FREQ            10000000  // CLK_ADC - 10 MHz max in normal mode
+#define CLK_ADC_FREQ            10000000  // CLK_ADC, ≤ 10 MHz, 根据 analog gain 调整
 
 static volatile int32_t sample;
 static volatile double singleResult;
@@ -81,24 +81,22 @@ void app_init(void)
     IADC_AllConfigs_t initAllConfigs = IADC_ALLCONFIGS_DEFAULT;
     IADC_InitSingle_t initSingle = IADC_INITSINGLE_DEFAULT;
 
-    init.srcClkPrescale = IADC_calcSrcClkPrescale(IADC0, CLK_SRC_ADC_FREQ, 0);
+    init.srcClkPrescale = IADC_calcSrcClkPrescale(IADC0, CLK_SRC_ADC_FREQ, 0); // 计算 CLK_SRC_ADC 时钟信号的预分频比
     init.warmup = iadcWarmupKeepWarm;
 
-    initAllConfigs.configs[0].reference = iadcCfgReferenceInt1V2;
-    initAllConfigs.configs[0].vRef = 1210;
-    initAllConfigs.configs[0].osrHighSpeed = iadcCfgOsrHighSpeed2x;
-    initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain0P5x;
-    initAllConfigs.configs[0].adcClkPrescale = IADC_calcAdcClkPrescale(IADC0,
-                                                                        CLK_ADC_FREQ,
-                                                                        0,
-                                                                        iadcCfgModeNormal,
-                                                                        init.srcClkPrescale);
+    initAllConfigs.configs[0].reference = iadcCfgReferenceInt1V2;              // 采用内部 1.21V 基准源
+    initAllConfigs.configs[0].vRef = 1210;                                     // 基准源电压 毫伏
+    initAllConfigs.configs[0].osrHighSpeed = iadcCfgOsrHighSpeed2x;            // 2x 过采样率
+    initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain0P5x;              // 0.5x 输入增益
+    initAllConfigs.configs[0].adcClkPrescale = IADC_calcAdcClkPrescale(IADC0, CLK_ADC_FREQ,
+                                                                       0, iadcCfgModeNormal,
+                                                                       init.srcClkPrescale);  // 计算ADC_CLK 时钟信号的预分频比
 
     // Single input structure
     IADC_SingleInput_t singleInput = IADC_SINGLEINPUT_DEFAULT;
 
-    singleInput.posInput = iadcPosInputPortAPin0;;
-    singleInput.negInput = iadcNegInputGnd;
+    singleInput.posInput = iadcPosInputPortAPin0;          // ADC 正输入引脚
+    singleInput.negInput = iadcNegInputGnd;                // ADC 负输入引脚（单端测量直接接地）
 
     // Enable Clock
     CMU_ClockEnable(cmuClock_IADC0, true);
@@ -108,6 +106,11 @@ void app_init(void)
     IADC_reset(IADC0);
 
     // Allocate the analog bus for ADC0 inputs
+    // GPIO_ABUSALLOC, GPIO_BBUSALLOC, GPIO_CDBUSALLOC 对应 GPIO A, GPIO B, GPIO C
+    // EVEN, ODD 对应偶数引脚，奇数引脚
+    // Single-End 模式可以使用任意引脚
+    // Differential 模式 positive input 必须为 even pin, negative input 必须为 odd pin
+    // 例如, Single-End 下使用 PB 1 作为输入，则此处配置为: GPIO->BBUSALLOC |= GPIO_BBUSALLOC_BODD0_ADC0
     GPIO->ABUSALLOC |= GPIO_ABUSALLOC_AEVEN0_ADC0;
 
     // Initialize IADC
@@ -121,12 +124,17 @@ void app_process_action(void)
     IADC_command(IADC0, iadcCmdStartSingle);
 
     // 等待 ADC 转换完成
-    while((IADC0->STATUS & (_IADC_STATUS_CONVERTING_MASK
-                | _IADC_STATUS_SINGLEFIFODV_MASK)) != IADC_STATUS_SINGLEFIFODV);
-    
-    sample = IADC_pullSingleFifoResult(IADC0).data;
-
-    printf("x=%lu\r\n", sample);
+    if ((IADC0->STATUS & (_IADC_STATUS_CONVERTING_MASK | _IADC_STATUS_SINGLEFIFODV_MASK)) != IADC_STATUS_SINGLEFIFODV)
+    {
+        ;
+    }
+    else
+    {
+        // 转换完成
+        sample = IADC_pullSingleFifoResult(IADC0).data;
+        singleResult = (sample / 0xFFF) * (1.21 / 0.5);
+        printf("x=%lu\r\n", sample);
+    }
 }
 
 ```
