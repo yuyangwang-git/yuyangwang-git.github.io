@@ -3,7 +3,7 @@ title: "EFR32 入门笔记 4: IADC 采样"
 date: 2023-03-15T16:32:30+08:00
 draft: false
 
-summary: 试一试 EFR32 的片内 16-bit ADC
+summary: 试一试 EFR32 的片内 16 bit ADC
 description: 有手就行
 
 tags: ["C", "EFR32"]
@@ -244,15 +244,15 @@ void IADC_IRQHandler(void)
 没啥好说的，目的是为了调用 `EMU_EnterEM2()` 函数。
 
 ```c
-    // Clear any previous interrupt flags
-    IADC_clearInt(IADC0, _IADC_IF_MASK);
+// Clear any previous interrupt flags
+IADC_clearInt(IADC0, _IADC_IF_MASK);
 
-    // Enable single-channel done interrupts
-    IADC_enableInt(IADC0, IADC_IEN_SINGLEDONE);
+// Enable single-channel done interrupts
+IADC_enableInt(IADC0, IADC_IEN_SINGLEDONE);
 
-    // Enable IADC interrupts
-    NVIC_ClearPendingIRQ(IADC_IRQn);
-    NVIC_EnableIRQ(IADC_IRQn);
+// Enable IADC interrupts
+NVIC_ClearPendingIRQ(IADC_IRQn);
+NVIC_EnableIRQ(IADC_IRQn);
 ```
 
 开启中断，常规操作了。
