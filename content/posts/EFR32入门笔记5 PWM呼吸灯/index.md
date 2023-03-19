@@ -1,7 +1,7 @@
 ---
-title: "EFR32 入门笔记 5: PWM 驱动 LED 灯"
+title: "EFR32 入门笔记 5: PWM 呼吸灯"
 date: 2023-03-18T20:25:55+08:00
-draft: true
+draft: false
 
 summary: Silicon Labs 的自动化工具还挺好用的
 description: 本文参考官方例程 Platform - Blink PWM Bare-metal
