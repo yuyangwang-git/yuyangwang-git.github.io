@@ -109,4 +109,52 @@ uint8_t pwm_lut[] = {
 
 ![PWM Lut](img/Lut.svg#center)
 
-看起来有点像指数函数？估计比起线性函数，视觉效果会稍微好一些。
+看起来有点像指数函数？做一个非线性拟合：
+
+![Nonlinear Regression](img/NonlinearRegression.svg#center)
+
+可以看到拟合结果非常好，Lut 满足：
+
+$$
+y = 4.44837e^{0.03126x} - 4.58963
+$$
+
+挺有意思的一个结果，猜测这样设计，是因为比起线性增加的函数，亮度指数增加的视觉效果会更好，但是这样猜测是否符合实际呢？
+
+过去在光度学里学过，人眼对亮度变化的响应并不是线性的，而是大致呈现为对数关系，换句话说，人眼对弱光的变化较为敏感，而对亮光的变化较为迟钝。
+
+![Weber-Fechner's Law and Stevens' Power Law](img/Bright.png#center)
+
+有很多关于人眼对光照响应的研究，例如上图中蓝线为 Weber-Fechne's Law，认为刺激强度和人类因刺激产生的感觉强度满足公式:
+
+$$
+S = 2.3klog_{10}(I)+C
+$$
+
+> 这也是为什么天文学中“视星等”采用对数进行定义！
+
+红线为 Stevens' Power Law，满足：
+
+$$
+S = kI^a
+$$
+
+具体哪一种曲线更符合人眼的真实情况不在本文的讨论之列，有兴趣的话可参考[这篇文章](https://www.telescope-optics.net/eye_intensity_response.htm)。
+
+从上面的讨论我们知道了，人眼对光照强度的响应呈现对数关系。也就是说，如果我们随时间线性提高光源的物理亮度，那么在人眼看来，光源的亮度的增速实际上是先快后慢的，看起来并不够平滑。
+
+如果我们希望人眼感知到的亮度是随时间线性增加的，那显然就需要换一种方法来调整光源的物理亮度，考虑到对数函数的反函数是指数函数，只需要使用指数方式，先慢后快的提高光源物理亮度，就有希望达到上述目的，这可能就是上述 Lut 采用指数函数的原因。
+
+实际上，如果我们把感知亮度作为横轴，光源真实亮度作为纵轴，就可以得到这样一条曲线：
+
+![Perceived Light vs. Measured Light](img/PerceivedLight.svg#center)
+
+> Human factors studies have shown that the eye perceives light in a logarithmic manner, mathematically speaking, in an approximately squared power relationship. Figure 1 illustrates this relationship.
+>
+>A linear profile is the most intuitive since when the dimming control is set to 50% or at 50% of its slider range then the measured light level is at 50%. However, with a linear profile the changes in light level at the low end of the dimming range are quite large and are sometimes viewed as step changes instead of smooth changes. This is due to the fact that the eye response is logarithmic and these step changes are perceived as being even larger than the measured percentages are. That being said, linear dimming profiles are adequate for many lighting applications that simply require dimming to be used for adjusting the light level for various tasks and times of day. In these applications the light level is adjusted occasionally and left at this level for a long period of time.  These applications actually comprise a majority of dimming requirements.
+>
+> The best simulation of the eye response is achieved with a logarithmic dimming profile. Figure 1 shows the typical eye response curve but slightly different logarithmic profiles are used by various LED driver manufacturers to enhance dimming performance. In addition to mimicking the eye response better, a logarithmic dimming profile enhances dimming smoothness at the lowest dimming levels. With the advent of the latest LED drivers that can achieve dimming to levels of nearly 0%, the availability of a logarithmic profile becomes even more important. Logarithmic profiles are also valuable for high- lumen-output luminaires (5000 lumens and above) in that they enable the dimming performance to be smoother because of the inherently wide lumen range of the light fixture. Applications requiring artistically ulta-smooth dimming such as theaters will greatly benefit from using logarithmic dimming profiles in all lumen ranges.
+>
+> — <cite>Linear vs. Logarithmic Dimming — A White Paper[^1]</cite>
+
+[^1]: [Linear vs. Logarithmic Dimming — A White Paper](https://www.pathwaylighting.com/products/downloads/brochure/technical_materials_1466797044_Linear+vs+Logarithmic+Dimming+White+Paper.pdf).
