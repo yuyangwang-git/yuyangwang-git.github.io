@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/tags/c/</link>
+    <link>https://wangyuyang.me/tags/c/</link>
     <description>Recent content in C on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EFR32 入门笔记 7: BLE 点亮呼吸灯</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</link>
       <pubDate>Sun, 02 Apr 2023 20:05:11 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</guid>
       <description>阻塞主循环不是一个好习惯 —— 鲁迅</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 6: BLE 点亮 LED 灯</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06-ble%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06-ble%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
       <pubDate>Sat, 01 Apr 2023 23:25:48 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06-ble%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06-ble%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
       <description>过去没接触过蓝牙开发，硬啃蓝牙协议啃了好久</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 5: PWM 呼吸灯</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05-pwm%E5%91%BC%E5%90%B8%E7%81%AF/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05-pwm%E5%91%BC%E5%90%B8%E7%81%AF/</link>
       <pubDate>Sat, 18 Mar 2023 20:25:55 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05-pwm%E5%91%BC%E5%90%B8%E7%81%AF/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05-pwm%E5%91%BC%E5%90%B8%E7%81%AF/</guid>
       <description>本文参考官方例程 Platform - Blink PWM Bare-metal</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 4: IADC 采样</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04-iadc%E9%87%87%E6%A0%B7/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04-iadc%E9%87%87%E6%A0%B7/</link>
       <pubDate>Wed, 15 Mar 2023 16:32:30 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04-iadc%E9%87%87%E6%A0%B7/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04-iadc%E9%87%87%E6%A0%B7/</guid>
       <description>有手就行</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 3: 串口通信</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</link>
       <pubDate>Mon, 13 Mar 2023 21:31:51 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03-%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</guid>
       <description>本文参考官方例程 Platform - I/O stream USART Bare-metal</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 2: 点亮 LED 灯</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
       <pubDate>Fri, 10 Mar 2023 22:28:48 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
       <description>本文参考官方例程 Platform - Blink Bare-metal</description>
     </item>
     
     <item>
       <title>EFR32 入门笔记 1: 开发环境搭建</title>
-      <link>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 09 Mar 2023 10:18:38 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>基于 EFR32BG22C112F352GM32</description>
     </item>
     

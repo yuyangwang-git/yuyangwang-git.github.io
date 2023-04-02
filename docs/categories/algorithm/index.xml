@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>algorithm on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/categories/algorithm/</link>
+    <link>https://wangyuyang.me/categories/algorithm/</link>
     <description>Recent content in algorithm on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 10 Aug 2022 19:14:52 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 19:14:52 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 MATLAB Coder 生成 Cpp 源码</title>
-      <link>https://yuyangwang-git.github.io/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</link>
+      <link>https://wangyuyang.me/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</link>
       <pubDate>Wed, 10 Aug 2022 19:14:52 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</guid>
+      <guid>https://wangyuyang.me/posts/%E4%BD%BF%E7%94%A8matlab-coder%E7%94%9F%E6%88%90cpp%E6%BA%90%E7%A0%81/</guid>
       <description>由于需要将 MATLAB 实现的算法快速移植到 QT 客户端中，研究了一下如何利用 MATLAB Coder 将算法转译为 C++ 源码</description>
     </item>
     

@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/tags/</link>
+    <link>https://wangyuyang.me/tags/</link>
     <description>Recent content in Tags on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C</title>
-      <link>https://yuyangwang-git.github.io/tags/c/</link>
+      <link>https://wangyuyang.me/tags/c/</link>
       <pubDate>Sun, 02 Apr 2023 20:05:11 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/c/</guid>
+      <guid>https://wangyuyang.me/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EFR32</title>
-      <link>https://yuyangwang-git.github.io/tags/efr32/</link>
+      <link>https://wangyuyang.me/tags/efr32/</link>
       <pubDate>Sun, 02 Apr 2023 20:05:11 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/efr32/</guid>
+      <guid>https://wangyuyang.me/tags/efr32/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ADC</title>
-      <link>https://yuyangwang-git.github.io/tags/adc/</link>
+      <link>https://wangyuyang.me/tags/adc/</link>
       <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/adc/</guid>
+      <guid>https://wangyuyang.me/tags/adc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>STM32</title>
-      <link>https://yuyangwang-git.github.io/tags/stm32/</link>
+      <link>https://wangyuyang.me/tags/stm32/</link>
       <pubDate>Fri, 16 Sep 2022 20:46:17 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/stm32/</guid>
+      <guid>https://wangyuyang.me/tags/stm32/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://yuyangwang-git.github.io/tags/c&#43;&#43;/</link>
+      <link>https://wangyuyang.me/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 05 Sep 2022 20:37:29 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/c&#43;&#43;/</guid>
+      <guid>https://wangyuyang.me/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MATLAB</title>
-      <link>https://yuyangwang-git.github.io/tags/matlab/</link>
+      <link>https://wangyuyang.me/tags/matlab/</link>
       <pubDate>Wed, 10 Aug 2022 19:14:52 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/matlab/</guid>
+      <guid>https://wangyuyang.me/tags/matlab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithm</title>
-      <link>https://yuyangwang-git.github.io/tags/algorithm/</link>
+      <link>https://wangyuyang.me/tags/algorithm/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/algorithm/</guid>
+      <guid>https://wangyuyang.me/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cpp</title>
-      <link>https://yuyangwang-git.github.io/tags/cpp/</link>
+      <link>https://wangyuyang.me/tags/cpp/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/cpp/</guid>
+      <guid>https://wangyuyang.me/tags/cpp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>async</title>
-      <link>https://yuyangwang-git.github.io/tags/async/</link>
+      <link>https://wangyuyang.me/tags/async/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/async/</guid>
+      <guid>https://wangyuyang.me/tags/async/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://yuyangwang-git.github.io/tags/javascript/</link>
+      <link>https://wangyuyang.me/tags/javascript/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/tags/javascript/</guid>
+      <guid>https://wangyuyang.me/tags/javascript/</guid>
       <description></description>
     </item>
     

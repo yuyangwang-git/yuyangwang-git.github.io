@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>front-end on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/categories/front-end/</link>
+    <link>https://wangyuyang.me/categories/front-end/</link>
     <description>Recent content in front-end on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 26 Jan 2022 21:58:57 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 21:58:57 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript异步编程</title>
-      <link>https://yuyangwang-git.github.io/posts/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+      <link>https://wangyuyang.me/posts/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
+      <guid>https://wangyuyang.me/posts/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
       <description>简单梳理一下Javascript异步编程相关知识</description>
     </item>
     

@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/categories/</link>
+    <link>https://wangyuyang.me/categories/</link>
     <description>Recent content in Categories on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>embedded</title>
-      <link>https://yuyangwang-git.github.io/categories/embedded/</link>
+      <link>https://wangyuyang.me/categories/embedded/</link>
       <pubDate>Sun, 02 Apr 2023 20:05:11 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/embedded/</guid>
+      <guid>https://wangyuyang.me/categories/embedded/</guid>
       <description></description>
     </item>
     
     <item>
       <title>signal processing</title>
-      <link>https://yuyangwang-git.github.io/categories/signal-processing/</link>
+      <link>https://wangyuyang.me/categories/signal-processing/</link>
       <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/signal-processing/</guid>
+      <guid>https://wangyuyang.me/categories/signal-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithm</title>
-      <link>https://yuyangwang-git.github.io/categories/algorithm/</link>
+      <link>https://wangyuyang.me/categories/algorithm/</link>
       <pubDate>Wed, 10 Aug 2022 19:14:52 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/algorithm/</guid>
+      <guid>https://wangyuyang.me/categories/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>back-end</title>
-      <link>https://yuyangwang-git.github.io/categories/back-end/</link>
+      <link>https://wangyuyang.me/categories/back-end/</link>
       <pubDate>Fri, 08 Jul 2022 08:39:32 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/back-end/</guid>
+      <guid>https://wangyuyang.me/categories/back-end/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LeetCode</title>
-      <link>https://yuyangwang-git.github.io/categories/leetcode/</link>
+      <link>https://wangyuyang.me/categories/leetcode/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/leetcode/</guid>
+      <guid>https://wangyuyang.me/categories/leetcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>front-end</title>
-      <link>https://yuyangwang-git.github.io/categories/front-end/</link>
+      <link>https://wangyuyang.me/categories/front-end/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/categories/front-end/</guid>
+      <guid>https://wangyuyang.me/categories/front-end/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>algorithm on Yuyang Wang&#39;s Blog</title>
-    <link>https://yuyangwang-git.github.io/tags/algorithm/</link>
+    <link>https://wangyuyang.me/tags/algorithm/</link>
     <description>Recent content in algorithm on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuyangwang-git.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 14 Apr 2022 23:55:27 +0800</lastBuildDate><atom:link href="https://yuyangwang-git.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Apr 2022 23:55:27 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二分查找的变化</title>
-      <link>https://yuyangwang-git.github.io/posts/binary-search-notes/</link>
+      <link>https://wangyuyang.me/posts/binary-search-notes/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
       
-      <guid>https://yuyangwang-git.github.io/posts/binary-search-notes/</guid>
+      <guid>https://wangyuyang.me/posts/binary-search-notes/</guid>
       <description>简单梳理一下二分查找的几种写法</description>
     </item>
     
