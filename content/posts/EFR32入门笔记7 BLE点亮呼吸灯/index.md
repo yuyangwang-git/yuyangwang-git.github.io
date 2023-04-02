@@ -3,7 +3,7 @@ title: "EFR32 入门笔记 7: BLE 点亮呼吸灯"
 date: 2023-04-02T20:05:11+08:00
 draft: false
 
-summary: 阻塞主循环不是一个好习惯
+summary: 阻塞主循环不是一个好习惯 —— 鲁迅
 description: 
 
 tags: ["C", "EFR32"]
