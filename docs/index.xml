@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 11:10:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EFR32 入门笔记 8: 启用硬件 FPU</title>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B08-%E5%90%AF%E7%94%A8%E7%A1%AC%E4%BB%B6fpu/</link>
+      <pubDate>Wed, 05 Apr 2023 11:10:11 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B08-%E5%90%AF%E7%94%A8%E7%A1%AC%E4%BB%B6fpu/</guid>
+      <description>信号处理速度++</description>
+    </item>
+    
     <item>
       <title>EFR32 入门笔记 7: BLE 点亮呼吸灯</title>
       <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</link>
