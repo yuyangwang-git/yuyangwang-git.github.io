@@ -11,7 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Apr 2023 20:05:11 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 13:27:23 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EFR32入门笔记9 互补 PWM 输出</title>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B09-%E4%BA%92%E8%A1%A5pwm%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Sun, 21 May 2023 13:27:23 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B09-%E4%BA%92%E8%A1%A5pwm%E8%BE%93%E5%87%BA/</guid>
+      <description>Gecko Platform 的 PWM Driver 似乎无法直接输出互补 PWM，还是得回到 emlib 库手动编写相关代码</description>
+    </item>
+    
+    <item>
+      <title>EFR32 入门笔记 8: 启用硬件 FPU</title>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B08-%E5%90%AF%E7%94%A8%E7%A1%AC%E4%BB%B6fpu/</link>
+      <pubDate>Wed, 05 Apr 2023 11:10:11 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B08-%E5%90%AF%E7%94%A8%E7%A1%AC%E4%BB%B6fpu/</guid>
+      <description>信号处理速度++</description>
+    </item>
+    
     <item>
       <title>EFR32 入门笔记 7: BLE 点亮呼吸灯</title>
       <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B07-ble%E7%82%B9%E4%BA%AE%E5%91%BC%E5%90%B8%E7%81%AF/</link>
@@ -58,12 +76,39 @@
     </item>
     
     <item>
+      <title>EFR32 入门笔记 2: 点亮 LED 灯</title>
+      <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</link>
+      <pubDate>Fri, 10 Mar 2023 22:28:48 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02-%E7%82%B9%E4%BA%AEled%E7%81%AF/</guid>
+      <description>本文参考官方例程 Platform - Blink Bare-metal</description>
+    </item>
+    
+    <item>
       <title>EFR32 入门笔记 1: 开发环境搭建</title>
       <link>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 09 Mar 2023 10:18:38 +0800</pubDate>
       
       <guid>https://wangyuyang.me/posts/efr32%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>基于 EFR32BG22C112F352GM32</description>
+    </item>
+    
+    <item>
+      <title>ADC 量化噪声</title>
+      <link>https://wangyuyang.me/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
+      <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</guid>
+      <description>在一些 ADC 的应用笔记中常看到信噪比计算公式 SNR = 6.02N + 1.76dB，恰巧又在同学的课题里看到了该公式，于是深挖了一下这个公式的来龙去脉．</description>
+    </item>
+    
+    <item>
+      <title>STM32 启动流程</title>
+      <link>https://wangyuyang.me/posts/stm32%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Fri, 16 Sep 2022 20:46:17 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/stm32%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description>梳理一下 STM32 复位后发生了啥</description>
     </item>
     
     <item>
