@@ -21,7 +21,7 @@ cover:
 
 Core 部分写的很清楚：`ARM CortexTM M33 processor with DSP extensions, FPU and TrustZone`。
 
-## SoC/MCU 有没有硬件 FPU 单元与其采用的架构有关吗？
+## SoC / MCU 有没有硬件 FPU 单元与其采用的架构有关吗？
 
 答案是有关系，以最常见的 Cortex-M 架构为例，并非所有 Cortex-M 内核处理器都具有硬件 FPU 和 DSP 单元，详细的列表可以在 [Arm Cortex-M Processor Comparison Table](https://developer.arm.com/documentation/102787/latest/) 中找到：
 
@@ -60,4 +60,10 @@ ISB                          ; Reset pipeline now the FPU is enabled.
 
 ### 实操部分
 
-待更新。
+第一步，我们要先确认编译器版本，因为不同的编译器的配置方法也略有区别。
+
+笔者使用的是 Simplicity Studio 5，在创建 Project 时，IDE / Toolchain 选择了：`Simplicity IDE / GNU ARM v10.3.1`，所以我使用的编译器就是 `GNU ARM`，也即 `gcc`，版本 `v10.3.1`。
+
+> Keil, IAR 等 IDE 默认使用其它编译器，如 ARMCC。
+
+第二步，
