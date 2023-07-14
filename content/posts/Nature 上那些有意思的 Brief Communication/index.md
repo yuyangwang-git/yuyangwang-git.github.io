@@ -76,6 +76,8 @@ $$
 
 ## Wood used by Stradivari and Guarneri
 
-三百年前 Stradivari 和 Guarneri 制作的小提琴非常非常出名，2013 年一把名为 Vieuxtemps Guarneri 的琴拍出了 1600 万美元的天价，研究者通过 NMR 和 FTIR 发现，Stradivari 和 Guarneri 在制作小提琴时，对木头进行了一定的化学处理。
+三百年前 Stradivari 和 Guarneri 制作的小提琴非常非常出名。查了一下资料，2013 年，一把名为 Vieuxtemps Guarneri 的琴甚至于拍出 1600 万美元的天价。
+
+研究者通过 NMR 和 FTIR 发现，Stradivari 和 Guarneri 在制作小提琴时，对木材进行了一定的化学处理。
 
 ![Spectroscopy of maple wood samples from antique violins.](img/nmr_ftir.png#center)
