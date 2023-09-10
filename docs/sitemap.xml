@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wangyuyang.me/posts/nature-%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84-brief-communication/</loc>
-    <lastmod>2023-06-16T21:44:12+08:00</lastmod>
-  </url><url>
     <loc>https://wangyuyang.me/posts/</loc>
+    <lastmod>2023-09-09T16:07:14+08:00</lastmod>
+  </url><url>
+    <loc>https://wangyuyang.me/</loc>
+    <lastmod>2023-09-09T16:07:14+08:00</lastmod>
+  </url><url>
+    <loc>https://wangyuyang.me/posts/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
+    <lastmod>2023-09-09T16:07:14+08:00</lastmod>
+  </url><url>
+    <loc>https://wangyuyang.me/posts/nature-%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84-brief-communication/</loc>
     <lastmod>2023-06-16T21:44:12+08:00</lastmod>
   </url><url>
     <loc>https://wangyuyang.me/tags/research/</loc>
     <lastmod>2023-06-16T21:44:12+08:00</lastmod>
   </url><url>
     <loc>https://wangyuyang.me/tags/</loc>
-    <lastmod>2023-06-16T21:44:12+08:00</lastmod>
-  </url><url>
-    <loc>https://wangyuyang.me/</loc>
     <lastmod>2023-06-16T21:44:12+08:00</lastmod>
   </url><url>
     <loc>https://wangyuyang.me/tags/c/</loc>
