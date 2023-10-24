@@ -3,8 +3,8 @@ title: "要怎样努力，才能成为很厉害的人？"
 date: 2023-10-24T10:32:54+08:00
 draft: false
 
-summary: 2014 年读到的一个知乎问题
-description: 2014 年读到的一个知乎问题
+summary: 九年前（2014）读过的一个知乎问题
+description: 九年前（2014）读过的一个知乎问题
 
 cover: 
     image: 'img/cover.jpg'
