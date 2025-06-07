@@ -10,7 +10,7 @@ tags: ["research"]
 
 cover: 
     image: 'img/cover.jpg'
-    caption: "By Isabella C. Aslarus"
+    caption: "Cover by Isabella C. Aslarus, illustrated edition."
 ---
 
 ## 一、稀缺心态：理论背景
