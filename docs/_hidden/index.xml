@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>_hiddens on Yuyang Wang&#39;s Blog</title>
+    <link>https://wangyuyang.me/_hidden/</link>
+    <description>Recent content in _hiddens on Yuyang Wang&#39;s Blog</description>
+    <image>
+      <title>Yuyang Wang&#39;s Blog</title>
+      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 10 Nov 2023 10:32:54 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/_hidden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EYE 小组祖传资料</title>
+      <link>https://wangyuyang.me/_hidden/eye-%E5%B0%8F%E7%BB%84%E7%A5%96%E4%BC%A0%E8%B5%84%E6%96%99/</link>
+      <pubDate>Fri, 10 Nov 2023 10:32:54 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/_hidden/eye-%E5%B0%8F%E7%BB%84%E7%A5%96%E4%BC%A0%E8%B5%84%E6%96%99/</guid>
+      <description>简单整理了一下我常用的工具和资料</description>
+    </item>
+    
+  </channel>
+</rss>
