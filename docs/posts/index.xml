@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Jun 2025 14:46:19 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Aug 2025 00:24:20 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 SU-8 模具制备聚二甲基硅氧烷（PDMS）微流控器件</title>
+      <link>https://wangyuyang.me/posts/%E4%BD%BF%E7%94%A8-su-8-%E6%A8%A1%E5%85%B7%E5%88%B6%E9%80%A0%E8%81%9A%E4%BA%8C%E7%94%B2%E5%9F%BA%E7%A1%85%E6%B0%A7%E7%83%B7%E5%BE%AE%E6%B5%81%E4%BD%93/</link>
+      <pubDate>Mon, 11 Aug 2025 00:24:20 +0800</pubDate>
+      
+      <guid>https://wangyuyang.me/posts/%E4%BD%BF%E7%94%A8-su-8-%E6%A8%A1%E5%85%B7%E5%88%B6%E9%80%A0%E8%81%9A%E4%BA%8C%E7%94%B2%E5%9F%BA%E7%A1%85%E6%B0%A7%E7%83%B7%E5%BE%AE%E6%B5%81%E4%BD%93/</guid>
+      <description>一篇不错的入门 Protocol</description>
+    </item>
+    
     <item>
       <title>现实中的 P 与 NP 问题</title>
       <link>https://wangyuyang.me/posts/%E7%8E%B0%E5%AE%9E%E4%B8%AD%E7%9A%84-p-%E4%B8%8E-np-%E9%97%AE%E9%A2%98/</link>

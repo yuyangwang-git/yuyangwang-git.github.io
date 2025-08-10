@@ -435,6 +435,12 @@ Build Finished. 0 errors, 0 warnings. (took 8s.351ms)
 
 ![0 error 0 warning](img/0_error_0_warning.jpg#center)
 
+> *2025.06.25* 简单说几句，烧录程序时需要特别注意起始地址：
+>
+> 直接烧录，会发现 MCU 仿佛被冻结，代码没有被正确运行，这是因为默认从 Flash 基地址 0x0000 下载程序，没有启用蓝牙时确实是对的
+>
+> 启用蓝牙后，由于 bootloader 的原因，Flash 前面几段地址被另作他用，因此用户程序的烧录起始地址需要修改，没记错的话是 0x6000
+
 ### 测试
 
 PC 端启动串口调试程序。手机端启动 nRF Connect，并搜索附近的设备：
