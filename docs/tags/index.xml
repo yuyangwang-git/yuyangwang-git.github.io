@@ -2,114 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Yuyang Wang&#39;s Blog</title>
-    <link>https://wangyuyang.me/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Jun 2025 20:43:20 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Jun 2025 20:43:20 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>research</title>
-      <link>https://wangyuyang.me/tags/research/</link>
+      <title>Research</title>
+      <link>http://localhost:1313/tags/research/</link>
       <pubDate>Sat, 07 Jun 2025 20:43:20 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/research/</guid>
+      <guid>http://localhost:1313/tags/research/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>C</title>
-      <link>https://wangyuyang.me/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sun, 21 May 2023 13:27:23 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>EFR32</title>
-      <link>https://wangyuyang.me/tags/efr32/</link>
+      <link>http://localhost:1313/tags/efr32/</link>
       <pubDate>Sun, 21 May 2023 13:27:23 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/efr32/</guid>
+      <guid>http://localhost:1313/tags/efr32/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ADC</title>
-      <link>https://wangyuyang.me/tags/adc/</link>
+      <link>http://localhost:1313/tags/adc/</link>
       <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/adc/</guid>
+      <guid>http://localhost:1313/tags/adc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>STM32</title>
-      <link>https://wangyuyang.me/tags/stm32/</link>
+      <link>http://localhost:1313/tags/stm32/</link>
       <pubDate>Fri, 16 Sep 2022 20:46:17 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/stm32/</guid>
+      <guid>http://localhost:1313/tags/stm32/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://wangyuyang.me/tags/c&#43;&#43;/</link>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 05 Sep 2022 20:37:29 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/c&#43;&#43;/</guid>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MATLAB</title>
-      <link>https://wangyuyang.me/tags/matlab/</link>
+      <link>http://localhost:1313/tags/matlab/</link>
       <pubDate>Wed, 10 Aug 2022 19:14:52 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/matlab/</guid>
+      <guid>http://localhost:1313/tags/matlab/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>algorithm</title>
-      <link>https://wangyuyang.me/tags/algorithm/</link>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/tags/algorithm/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/algorithm/</guid>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cpp</title>
-      <link>https://wangyuyang.me/tags/cpp/</link>
+      <title>Cpp</title>
+      <link>http://localhost:1313/tags/cpp/</link>
       <pubDate>Thu, 14 Apr 2022 23:55:27 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/cpp/</guid>
+      <guid>http://localhost:1313/tags/cpp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>async</title>
-      <link>https://wangyuyang.me/tags/async/</link>
+      <title>Async</title>
+      <link>http://localhost:1313/tags/async/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/async/</guid>
+      <guid>http://localhost:1313/tags/async/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Javascript</title>
-      <link>https://wangyuyang.me/tags/javascript/</link>
+      <link>http://localhost:1313/tags/javascript/</link>
       <pubDate>Wed, 26 Jan 2022 21:58:57 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/tags/javascript/</guid>
+      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

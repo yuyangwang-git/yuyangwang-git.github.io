@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>signal processing on Yuyang Wang&#39;s Blog</title>
-    <link>https://wangyuyang.me/categories/signal-processing/</link>
-    <description>Recent content in signal processing on Yuyang Wang&#39;s Blog</description>
+    <title>Signal Processing on Yuyang Wang&#39;s Blog</title>
+    <link>http://localhost:1313/categories/signal-processing/</link>
+    <description>Recent content in Signal Processing on Yuyang Wang&#39;s Blog</description>
     <image>
       <title>Yuyang Wang&#39;s Blog</title>
-      <url>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://wangyuyang.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate><atom:link href="https://wangyuyang.me/categories/signal-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 16:01:24 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/signal-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADC 量化噪声</title>
-      <link>https://wangyuyang.me/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
+      <link>http://localhost:1313/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</link>
       <pubDate>Thu, 13 Oct 2022 16:01:24 +0800</pubDate>
-      
-      <guid>https://wangyuyang.me/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</guid>
+      <guid>http://localhost:1313/posts/adc%E9%87%8F%E5%8C%96%E5%99%AA%E5%A3%B0/</guid>
       <description>在一些 ADC 的应用笔记中常看到信噪比计算公式 SNR = 6.02N + 1.76dB，恰巧又在同学的课题里看到了该公式，于是深挖了一下这个公式的来龙去脉．</description>
     </item>
-    
   </channel>
 </rss>
