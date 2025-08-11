@@ -4,7 +4,7 @@ date: 2025-08-11T00:24:20+08:00
 draft: false
 
 summary: "利用软光刻技术倒模加工 PDMS 的流程"
-description: "一篇不错的入门 Protocol"
+description: "翻译了一篇不错的入门 Protocol"
 
 cover: 
     image: 'img/Fig1.webp'
@@ -67,7 +67,7 @@ cover:
 
 > 对于更小的线宽，一般采用铬版掩膜进行加工，5 英寸铬版价格约 1000 元
 
-### 3.2 涂覆 SU-8 光刻胶
+### 3.2 旋涂 SU-8 光刻胶并进行软烘烤
 
 将 SU-8 光刻胶通过光刻胶旋涂机涂覆在硅晶圆表面，旋涂转速应满足所需的膜厚。
 
@@ -75,23 +75,35 @@ cover:
 
 例如，若使用 SU-8 100 制备厚度为 100 μm 的 SU-8 膜，先以 500 rpm 旋涂 5 秒，使光刻胶均匀铺展，然后以 3000 rpm 旋涂 30 秒，获得最终厚度（见注释 7）。
 
-随后，对晶圆进行软烘焙（soft bake），时间与温度应根据膜厚要求确定（见注释 8）。以 100 μm 膜厚为例，软烘条件为：65 °C 烘 10 分钟，再以 95 °C 烘 30 分钟。
+> 对于厚膜，由于表面张力的作用几乎不可避免的会在晶圆边缘形成边缘珠（edge bead），精度要求不高时可以忽略。
 
-采用双阶段烘焙可降低因热效应产生的内应力。
+随后，对晶圆进行软烘烤（soft bake），时间与温度应根据膜厚要求确定（见注释 8）。以 100 μm 膜厚为例，软烘条件为：65 °C 烘 10 分钟，再以 95 °C 烘 30 分钟。
 
-{{< figure src="img/SoftBakeTimes.svg" attr="Soft Bake Times" align=center target="_blank" width="75%">}}
+采用双阶段烘烤可降低因热效应产生的内应力。
+
+{{< figure src="img/SoftBakeTimes.svg" attr="Soft Bake Times" align=center width="75%">}}
+
+> SU-8 光刻胶不需要一些厚膜正胶必须进行的水化（rehydration）过程，相反，脱水有助于其曝光。
 
 ### 3.3 曝光
 
 将透明胶片光掩膜夹在涂有 SU-8 光刻胶的硅晶圆与一片空白玻璃板之间。将样品放入紫外曝光机，在设定的曝光剂量下进行曝光（本例为 400 mJ/cm²）。
 
-{{< figure src="img/ExposureDose.svg" attr="Exposure Dose" align=center target="_blank" width="75%">}}
+{{< figure src="img/ExposureDose.svg" attr="Exposure Dose" align=center width="75%">}}
 
-### 3.4 后烘焙
+> 如何计算曝光时长？
+>
+> 首先根据膜厚从光刻胶手册确定 Exposure Energy，然后代入下式：
+>
+> $$ Exposure Time(s) = \frac{Exposure Energy (mJ \cdot cm^{-2}) }{Light Intensity (mW \cdot cm^{-2} )} $$
+>
+> 通过紫外光辐射计可以确定光强，笔者实验室光刻机工作波长为 I-line，测量可得光强 $25 mW \cdot cm^{-2}$ ，因此对于 $400 mJ \cdot cm^{-2}$的目标曝光剂量，曝光时长为 16 s
 
-曝光完成后，进行后烘焙（postexposure bake，见注释 8），以选择性地交联曝光区域的光刻胶。本例条件为：65 °C 烘 1 分钟，随后 95 °C 烘 10 分钟。
+### 3.4 曝光后烘烤（PEB）
 
-{{< figure src="img/PEBTimes.svg" attr="PEB Times" align=center target="_blank" width="75%">}}
+曝光完成后，进行后烘烤（postexposure bake，见注释 8），以选择性地交联曝光区域的光刻胶。本例条件为：65 °C 烘 1 分钟，随后 95 °C 烘 10 分钟。
+
+{{< figure src="img/PEBTimes.svg" attr="PEB Times" align=center width="75%">}}
 
 > *在 95°C 下进行 1 分钟的 PEB（后烘烤）后，应当能在 SU-8 2000 光刻胶涂层中看到掩膜的图像。 如果在 PEB 过程中或之后都没有看到可见的潜像，这意味着曝光、加热或两者都不足。*
 >
@@ -105,11 +117,13 @@ cover:
 
 判断显影是否完成的方法是：取出样品，用新鲜显影液喷洗，再用异丙醇冲洗，最后用氮气轻柔吹干。
 
-{{< figure src="img/DevelopmentTimes.svg" attr="Development Times" align=center target="_blank" width="75%">}}
+{{< figure src="img/DevelopmentTimes.svg" attr="Development Times" align=center width="75%">}}
 
 > 和其他光刻胶一样，将掩膜浸泡在显影液中，摇动容器也可以显影，但 Microchemicals 手册称会降低分辨率。
 
 > SU-8 显影液的主要成分为 PGMEA，油漆味非常重，注意防护。
+
+> 这里省略了 Hard Bake，为了获得永久固化层，可以进行 150 °C，5 ~ 30 min 的硬烘烤以提高交联度，但降温时一定一定要缓慢降温，不要直接取出硅片放置在冰冷的台面上。
 
 ### 3.6 涂覆脱模层
 
@@ -137,7 +151,7 @@ ___
 
 1. 多层模具需要使用对准机（alignment machine）。对准机可在多次曝光过程中，将掩膜与已有图形进行精确对准。
 
-2. 所有烘焙时间均基于加热板（hot plate）条件给出。所有烘焙步骤也可使用烘箱完成，但烘焙时间可能有所不同。
+2. 所有烘烤时间均基于加热板（hot plate）条件给出。所有烘烤步骤也可使用烘箱完成，但烘烤时间可能有所不同。
 
 > Microchemicals 建议避免使用烘箱加热：
 >
@@ -157,8 +171,8 @@ ___
 
 7. 光刻胶旋涂后常会产生气泡，可用锋利物体小心刺破，迅速去除。
 
-8. 所有烘焙步骤完成后，应让样品缓慢冷却至室温（至少 15 分钟）再进行后续加工，以减少内应力。该热松弛过程对模具的完整性至关重要。
+8. 所有烘烤步骤完成后，应让样品缓慢冷却至室温（至少 15 分钟）再进行后续加工，以减少内应力。该热松弛过程对模具的完整性至关重要。
 
 9. PDMS 的固化过程也可在室温下长时间（24 小时或更久）进行，以便更容易将 PDMS 从模具上剥离。经良好抛光且无氧化层的硅晶圆，通常可作为最佳基底，有助于 PDMS 的脱模。
 
-10.  可使用刀具沿晶圆边缘切割 PDMS，以便更容易剥离。
+10. 可使用刀具沿晶圆边缘切割 PDMS，以便更容易剥离。
