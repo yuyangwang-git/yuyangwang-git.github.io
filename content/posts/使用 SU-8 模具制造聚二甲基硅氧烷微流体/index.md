@@ -13,7 +13,7 @@ cover:
 
 ## 写在前面
 
-本文为个人学习笔记，译自 “Fabrication of Polydimethylsiloxane Microfluidics Using SU-8 Molds”，作者为加州大学欧文分校机械工程系 Rabih Zaouk、Benjamin Y. Park 和 Marc J. Madou。内容涵盖利用 SU-8 模具制备聚二甲基硅氧烷（PDMS）微流控器件的工艺步骤与注意事项，便于后续查阅与参考。
+本文为个人学习笔记，主体译自 “Fabrication of Polydimethylsiloxane Microfluidics Using SU-8 Molds”，作者为加州大学欧文分校机械工程系 Rabih Zaouk、Benjamin Y. Park 和 Marc J. Madou。内容涵盖利用 SU-8 模具制备聚二甲基硅氧烷（PDMS）微流控器件的工艺步骤与注意事项，此外还补充了一些 Microchemicals 技术手册中的内容，便于后续查阅与参考。
 
 ## 摘要
 
@@ -63,8 +63,6 @@ cover:
 
 对于具有较小特征尺寸的器件，通常使用玻璃或石英掩膜；而对于特征尺寸相对较大的器件（>50 μm），可使用价格更低的透明胶片作为掩膜材料。掩膜图形可通过高分辨率打印机直接打印在常规透明胶片上即可。
 
-> 译者注：
->
 > 在 2025 年的今天，仅需极低的成本（100 ~ 200 元）即可在淘宝加工最小线宽 10 um 的光绘菲林掩膜
 >
 > 对于更小的线宽，一般采用铬版掩膜进行加工，5 英寸铬版价格约 1000 元
@@ -73,25 +71,45 @@ cover:
 
 将 SU-8 光刻胶通过光刻胶旋涂机涂覆在硅晶圆表面，旋涂转速应满足所需的膜厚。
 
+> 从冷藏室取出光刻胶后，应先回温，再启瓶，避免光刻胶吸水，分辨率降低。
+
 例如，若使用 SU-8 100 制备厚度为 100 μm 的 SU-8 膜，先以 500 rpm 旋涂 5 秒，使光刻胶均匀铺展，然后以 3000 rpm 旋涂 30 秒，获得最终厚度（见注释 7）。
 
 随后，对晶圆进行软烘焙（soft bake），时间与温度应根据膜厚要求确定（见注释 8）。以 100 μm 膜厚为例，软烘条件为：65 °C 烘 10 分钟，再以 95 °C 烘 30 分钟。
 
 采用双阶段烘焙可降低因热效应产生的内应力。
 
+{{< figure src="img/SoftBakeTimes.svg" attr="Soft Bake Times" align=center target="_blank" width="75%">}}
+
 ### 3.3 曝光
 
 将透明胶片光掩膜夹在涂有 SU-8 光刻胶的硅晶圆与一片空白玻璃板之间。将样品放入紫外曝光机，在设定的曝光剂量下进行曝光（本例为 400 mJ/cm²）。
 
+{{< figure src="img/ExposureDose.svg" attr="Exposure Dose" align=center target="_blank" width="75%">}}
+
 ### 3.4 后烘焙
 
 曝光完成后，进行后烘焙（postexposure bake，见注释 8），以选择性地交联曝光区域的光刻胶。本例条件为：65 °C 烘 1 分钟，随后 95 °C 烘 10 分钟。
+
+{{< figure src="img/PEBTimes.svg" attr="PEB Times" align=center target="_blank" width="75%">}}
+
+> *在 95°C 下进行 1 分钟的 PEB（后烘烤）后，应当能在 SU-8 2000 光刻胶涂层中看到掩膜的图像。 如果在 PEB 过程中或之后都没有看到可见的潜像，这意味着曝光、加热或两者都不足。*
+>
+> — <cite>*SU-8 2000 Permanent Negative Epoxy Photoresist*[^1]</cite>
+
+> 实测 65 °C 预加热过程即可看到被固化的图案
 
 ### 3.5 显影
 
 将 SU-8 显影液倒入烧杯，并准备一个装有新鲜显影液的喷瓶。将样品放入显影液中显影，直至所有未曝光的 SU-8 完全去除。
 
 判断显影是否完成的方法是：取出样品，用新鲜显影液喷洗，再用异丙醇冲洗，最后用氮气轻柔吹干。
+
+{{< figure src="img/DevelopmentTimes.svg" attr="Development Times" align=center target="_blank" width="75%">}}
+
+> 和其他光刻胶一样，将掩膜浸泡在显影液中，摇动容器也可以显影，但 Microchemicals 手册称会降低分辨率。
+
+> SU-8 显影液的主要成分为 PGMEA，油漆味非常重，注意防护。
 
 ### 3.6 涂覆脱模层
 
@@ -103,8 +121,6 @@ cover:
 
 混合完成后，可将其置于真空环境中进行脱气。将脱气后的 PDMS 混合物倒覆在硅/SU-8 模具上，在 65 °C 下固化 1 小时（见注释 9）。未用完的混合物可放置于冰箱或冷冻室保存，以备后用。
 
-> 译者注：
->
 > 实测在冷藏室中保存，PDMS 依然会缓慢固化，长期保存还是需要低温冷冻。
 
 固化冷却后，小心地将 PDMS 从模具上剥离（见注释 10）。该过程可获得一片透明的聚合物薄膜，其内部包含与光刻胶阳模结构对应的通道与腔室。
@@ -121,7 +137,15 @@ ___
 
 1. 多层模具需要使用对准机（alignment machine）。对准机可在多次曝光过程中，将掩膜与已有图形进行精确对准。
 
-2. 所有烘焙时间均基于**加热板（hot plate）**条件给出。所有烘焙步骤也可使用烘箱完成，但烘焙时间可能有所不同。
+2. 所有烘焙时间均基于加热板（hot plate）条件给出。所有烘焙步骤也可使用烘箱完成，但烘焙时间可能有所不同。
+
+> Microchemicals 建议避免使用烘箱加热：
+>
+> *在对流烘箱中烘烤时，光刻胶表面可能会形成一层膜，这层膜会阻碍溶剂的挥发，从而导致薄膜干燥不完全和/或烘烤时间延长。*
+>
+> — <cite>*SU-8 2000 Permanent Negative Epoxy Photoresist*[^1]</cite>
+
+[^1]: [SU-8 2000 Permanent Negative Epoxy Photoresist](https://kayakuam.com/wp-content/uploads/2020/08/KAM-SU-8-2000-2025-2075-Datasheet.8.19.20-final.pdf).
 
 3. 操作过程中应全程佩戴防护装备，包括化学防护手套与安全护目镜。在开始任何工艺前，应查阅所有化学品的材料安全数据表（MSDS），以了解其毒性、易燃性和操作注意事项。
 
@@ -137,4 +161,4 @@ ___
 
 9. PDMS 的固化过程也可在室温下长时间（24 小时或更久）进行，以便更容易将 PDMS 从模具上剥离。经良好抛光且无氧化层的硅晶圆，通常可作为最佳基底，有助于 PDMS 的脱模。
 
-10. 可使用刀具沿晶圆边缘切割 PDMS，以便更容易剥离。
+10.  可使用刀具沿晶圆边缘切割 PDMS，以便更容易剥离。
