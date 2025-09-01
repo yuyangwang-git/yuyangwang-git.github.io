@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Coretex-M33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 623.62 680.31" style="enable-background:new 0 0 623.62 680.31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FF6B00;}
+	.st2{fill:none;}
+	.st3{fill:#333E48;}
+	.st4{font-family: 'Lato', sans-serif;}
+	.st5{font-size:36px;}
+	.st6{font-family: 'Lato', sans-serif;}
+	.st7{font-size:18px;}
+	.st8{fill:#95D600;}
+</style>
+<rect x="-14.17" y="-14.36" class="st0" width="651.97" height="708.85"/>
+<rect x="28.35" y="127.37" class="st1" width="566.93" height="42.52"/>
+<rect x="28.35" y="70.68" class="st2" width="566.93" height="33.22"/>
+<text transform="matrix(1 0 0 1 28.3465 96.924)" class="st3 st4 st5">CORTEX-M33</text>
+<g>
+	<rect x="28.35" y="127.56" class="st2" width="566.93" height="42.52"/>
+	<text transform="matrix(1 0 0 1 215.9897 155.4607)" class="st3 st6 st7">TrustZone for Armv8-M</text>
+</g>
+<path class="st3" d="M47.55,28.84h5.72v24.49h-5.72v-2.55c-2.52,2.91-5.57,3.31-7.34,3.31c-7.55,0-11.87-6.29-11.87-13.02
+	c0-7.98,5.47-12.87,11.94-12.87c1.8,0,4.96,0.47,7.26,3.49L47.55,28.84L47.55,28.84z M34.17,41.18c0,4.24,2.66,7.8,6.8,7.8
+	c3.6,0,6.94-2.62,6.94-7.73c0-5.36-3.31-7.91-6.94-7.91C36.83,33.34,34.17,36.83,34.17,41.18z M60.02,28.84h5.72v2.19
+	c0.65-0.76,1.58-1.58,2.37-2.05c1.11-0.65,2.19-0.83,3.49-0.83c1.4,0,2.91,0.22,4.49,1.15l-2.34,5.18
+	c-1.29-0.83-2.34-0.86-2.91-0.86c-1.22,0-2.45,0.18-3.56,1.33c-1.58,1.69-1.58,4.03-1.58,5.65V53.3h-5.72V28.84H60.02z M79.77,28.84
+	h5.72v2.27c1.91-2.34,4.17-2.91,6.04-2.91c2.55,0,4.96,1.22,6.33,3.6c2.05-2.91,5.11-3.6,7.26-3.6c2.98,0,5.57,1.4,6.98,3.85
+	c0.47,0.83,1.29,2.62,1.29,6.18v15.14h-5.72V39.88c0-2.73-0.29-3.85-0.54-4.35c-0.36-0.93-1.22-2.16-3.27-2.16
+	c-1.4,0-2.62,0.76-3.38,1.8c-1.01,1.4-1.11,3.49-1.11,5.57v12.62h-5.72V39.88c0-2.73-0.29-3.85-0.54-4.35
+	c-0.36-0.93-1.22-2.16-3.27-2.16c-1.4,0-2.62,0.76-3.38,1.8c-1.01,1.4-1.11,3.49-1.11,5.57v12.62h-5.57V28.84z"/>
+<g>
+	<path class="st1" d="M593.03,129.95v519.77H30.6V129.95H593.03 M595.28,127.7H28.35v524.27h566.93V127.7L595.28,127.7z"/>
+</g>
+<g>
+	<path class="st3" d="M167.83,484.14v66.37H44.77v-66.37H167.83 M170.08,481.89H42.52v70.87h127.56V481.89L170.08,481.89z"/>
+</g>
+<rect x="42.52" y="254.93" class="st8" width="538.58" height="56.69"/>
+<g>
+	<path class="st3" d="M309.56,328.23v52.19H44.77v-52.19H309.56 M311.81,325.98H42.52v56.69h269.29V325.98L311.81,325.98z"/>
+</g>
+<g>
+	<path class="st3" d="M167.83,399.1v66.37H44.77V399.1H167.83 M170.08,396.85H42.52v70.87h127.56V396.85L170.08,396.85z"/>
+</g>
+<rect x="48.58" y="261.41" class="st2" width="526.47" height="43.75"/>
+<text transform="matrix(1 0 0 1 293.7302 279.1213)"><tspan x="0" y="0" class="st3 st6 st7">CPU</tspan><tspan x="-56" y="21.6" class="st3 st6 st7">Armv8-M mainline</tspan></text>
+<rect x="42.52" y="325.98" class="st2" width="269.29" height="56.69"/>
+<text transform="matrix(1 0 0 1 82.0051 360.9724)" class="st3 st6 st7">Memory protection unit</text>
+<rect x="42.52" y="396.85" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 70.1825 438.9254)" class="st3 st6 st7">2x AHB5</text>
+<rect x="42.52" y="481.89" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 56.3861 513.1652)"><tspan x="0" y="0" class="st3 st6 st7">Coprocessor</tspan><tspan x="14.62" y="21.6" class="st3 st6 st7">interface</tspan></text>
+<g>
+	<path class="st3" d="M167.83,569.18v66.37H44.77v-66.37H167.83 M170.08,566.93H42.52v70.87h127.56V566.93L170.08,566.93z"/>
+</g>
+<rect x="42.52" y="566.93" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 56.3993 598.2046)"><tspan x="0" y="0" class="st3 st6 st7">Arm Custom </tspan><tspan x="2.99" y="21.6" class="st3 st6 st7">Instructions</tspan></text>
+<g>
+	<path class="st3" d="M309.56,526.66v108.89H186.5V526.66H309.56 M311.81,524.41H184.25V637.8h127.56V524.41L311.81,524.41z"/>
+</g>
+<g>
+	<path class="st3" d="M309.56,399.1v108.89H186.5V399.1H309.56 M311.81,396.85H184.25v113.39h127.56V396.85L311.81,396.85z"/>
+</g>
+<rect x="184.25" y="396.85" class="st2" width="127.56" height="113.39"/>
+<text transform="matrix(1 0 0 1 209.3499 460.1855)" class="st3 st6 st7">ITM trace</text>
+<rect x="184.25" y="524.41" class="st2" width="126.39" height="113.39"/>
+<text transform="matrix(1 0 0 1 206.1292 587.7438)" class="st3 st6 st7">ETM trace</text>
+<g>
+	<path class="st3" d="M309.56,186.32v52.19H44.77v-52.19H309.56 M311.81,184.07H42.52v56.69h269.29V184.07L311.81,184.07z"/>
+</g>
+<g>
+	<path class="st3" d="M578.85,185.52v52.19H328.23v-52.19H578.85 M581.1,183.27H325.98v56.69H581.1V183.27L581.1,183.27z"/>
+</g>
+<rect x="42.52" y="183.88" class="st2" width="269.29" height="57.06"/>
+<text transform="matrix(1 0 0 1 109.5406 208.2549)"><tspan x="0" y="0" class="st3 st6 st7">Nested Vectored</tspan><tspan x="-10.41" y="21.6" class="st3 st6 st7">Interrupt Controller</tspan></text>
+<rect x="325.98" y="184.25" class="st2" width="255.12" height="56.69"/>
+<text transform="matrix(1 0 0 1 416.8555 208.4405)"><tspan x="0" y="0" class="st3 st6 st7">Wake-up</tspan><tspan x="-41.35" y="21.6" class="st3 st6 st7">Interrupt Controller</tspan></text>
+<g>
+	<path class="st3" d="M451.29,327.26v52.19H328.23v-52.19H451.29 M453.54,325.01H325.98v56.69h127.56V325.01L453.54,325.01z"/>
+</g>
+<g>
+	<path class="st3" d="M451.29,398.12v66.37H328.23v-66.37H451.29 M453.54,395.87H325.98v70.87h127.56V395.87L453.54,395.87z"/>
+</g>
+<g>
+	<path class="st3" d="M451.29,483.16v66.37H328.23v-66.37H451.29 M453.54,480.91H325.98v70.87h127.56V480.91L453.54,480.91z"/>
+</g>
+<g>
+	<path class="st3" d="M451.29,568.2v66.37H328.23V568.2H451.29 M453.54,565.95H325.98v70.87h127.56V565.95L453.54,565.95z"/>
+</g>
+<g>
+	<path class="st3" d="M578.85,525.68v109.68H469.97V525.68H578.85 M581.1,523.43H467.72v114.18H581.1V523.43L581.1,523.43z"/>
+</g>
+<g>
+	<path class="st3" d="M578.85,398.12v108.89H469.97V398.12H578.85 M581.1,395.87H467.72v113.39H581.1V395.87L581.1,395.87z"/>
+</g>
+<g>
+	<path class="st3" d="M578.85,327.26v52.19H469.97v-52.19H578.85 M581.1,325.01H467.72v56.69H581.1V325.01L581.1,325.01z"/>
+</g>
+<rect x="325.98" y="395.87" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 370.6702 427.1481)"><tspan x="0" y="0" class="st3 st6 st7">Data</tspan><tspan x="-25.78" y="21.6" class="st3 st6 st7">watchpoint</tspan></text>
+<rect x="325.98" y="480.91" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 346.0598 512.1878)"><tspan x="0" y="0" class="st3 st6 st7">Breakpoint</tspan><tspan x="28.19" y="21.6" class="st3 st6 st7">unit</tspan></text>
+<rect x="325.98" y="565.95" class="st2" width="127.56" height="70.87"/>
+<text transform="matrix(1 0 0 1 370.1888 608.0272)" class="st3 st6 st7">MTB</text>
+<rect x="325.98" y="325.01" class="st2" width="127.56" height="56.69"/>
+<text transform="matrix(1 0 0 1 372.5779 359.9949)" class="st3 st6 st7">DSP</text>
+<rect x="467.72" y="523.43" class="st2" width="113.39" height="113.39"/>
+<text transform="matrix(1 0 0 1 482.9787 586.7673)" class="st3 st6 st7">Serial wire</text>
+<rect x="470.24" y="325.01" class="st2" width="110.86" height="56.69"/>
+<text transform="matrix(1 0 0 1 508.4991 359.9955)" class="st3 st6 st7">FPU</text>
+<rect x="470.24" y="395.87" class="st2" width="110.86" height="113.39"/>
+<text transform="matrix(1 0 0 1 503.8145 459.208)" class="st3 st6 st7">JTAG</text>
+</svg>
