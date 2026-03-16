@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Math 笔记 | 最优化问题 | Yuyang Wang&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="近期接触的一些优化算法常识">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/%3Clink%20/%20abs%20url%3E">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/%3Clink%20/%20abs%20url%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/%3Clink%20/%20abs%20url%3E">
+<link rel="apple-touch-icon" href="http://localhost:1313/%3Clink%20/%20abs%20url%3E">
+<link rel="mask-icon" href="http://localhost:1313/%3Clink%20/%20abs%20url%3E">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false}
+        ]
+    });
+});
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org" title="Server">
+                    <span>Server</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Math 笔记 | 最优化问题
+    </h1>
+    <div class="post-meta"><span title='2026-03-07 11:48:51 +0800 CST'>March 7, 2026</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;246 words
+
+</div>
+  </header> 
+<figure class="entry-cover">
+            <img loading="eager" src="http://localhost:1313/posts/%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98/img/Fig1.jpg" alt=" 关关难过关关过，前路漫漫亦灿灿">
+        <figcaption>关关难过关关过，前路漫漫亦灿灿</figcaption>
+</figure><div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#什么是最优化问题">什么是最优化问题？</a></li>
+        <li><a href="#优化问题的分类无约束问题--有约束问题">优化问题的分类：无约束问题 &amp; 有约束问题</a></li>
+        <li><a href="#如何求解最优化问题最优化算法">如何求解最优化问题：最优化算法</a></li>
+        <li><a href="#一个实际的例子lasso-回归问题">一个实际的例子，LASSO 回归问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="什么是最优化问题">什么是最优化问题？<a hidden class="anchor" aria-hidden="true" href="#什么是最优化问题">#</a></h3>
+<p>最优化问题一般可以写为：</p>
+$$\min f(x)\quad \text{s.t. } x\in\mathcal{X}$$<p>这里 “s.t.” 是 “subject to” 的缩写，表示“在……条件下”，因此</p>
+$$\text{s.t.}\quad x\in \mathcal{X}$$<p>表示变量要满足一定的约束条件．︀</p>
+<p>上式完整的读法：在 $x$ 属于集合 $\mathcal{X}$ 的条件下，使 $f(x)$ 取得最小值．︀</p>
+<blockquote>
+<p>集合 $\mathcal{X}$ 也被称为可行域，而 $f(x)$ 则被称为目标函数．︀</p></blockquote>
+<h3 id="优化问题的分类无约束问题--有约束问题">优化问题的分类：无约束问题 &amp; 有约束问题<a hidden class="anchor" aria-hidden="true" href="#优化问题的分类无约束问题--有约束问题">#</a></h3>
+<p>要了解如何求解优化问题，需要先来明确一些基本定义．︀</p>
+<p>当问题的可行域覆盖整个实数域时（也即 $\mathcal{X}=\mathbb{R}^n$ ），最优化问题转变为无约束优化问题，即：</p>
+$$
+\min_{x\in\mathbb{R}^n} f(x)
+$$<p>而现实中很多情况下是存在约束的，例如最常见的不等式约束：</p>
+$$
+\min f(x)\quad \text{s.t. } g(x)\le 0
+$$<p>等式约束：</p>
+$$
+\min f(x)\quad \text{s.t. } h(x)=0
+$$<p>这些概念都是相对比较好理解的，下一节我们来探讨如何求解最优化问题．︀</p>
+<h3 id="如何求解最优化问题最优化算法">如何求解最优化问题：最优化算法<a hidden class="anchor" aria-hidden="true" href="#如何求解最优化问题最优化算法">#</a></h3>
+<p>无约束问题的求解方法很多都比较直观，很多时候只是一个简单的函数最值问题，大多都在初高中和大学数学中学习过，例如经典的牛顿迭代法，这里就不再花时间讨论了，我们直接来看有约束问题如何分析．︀</p>
+<p>对于一个典型的不等式约束问题：</p>
+$$
+\min f(x)\quad \text{s.t. } g(x)\le 0
+$$<p>数学上有非常非常多的方法可以求解，如罚函数法、增广拉格朗日法（ALM）、交替方向乘子法（ADMM）、有兴趣的读者可以参考 <a href="https://slzhang.com/optimization_2nd.pdf">最优化：建模、算法与理论（第二版）</a>，这里我们只挑一些比较简单的形式进行分析．︀</p>
+<h4 id="罚函数法求解有约束优化问题">罚函数法求解有约束优化问题<a hidden class="anchor" aria-hidden="true" href="#罚函数法求解有约束优化问题">#</a></h4>
+<p>罚函数的思想比较直观，既然无约束问题求解较为简单，那我们能否把有约束问题转化为无约束问题然后求解呢？答案是肯定的，例如不等式约束：</p>
+$$
+\min f(x)\quad \text{s.t. } g(x)\le 0
+$$<p>该问题希望在满足约束的前提下，让 $f(x)$ 最小，既然如此，我们不妨直接构造一个新的函数：</p>
+$$
+\text{新目标} = f(x) + \rho \cdot \text{“违反约束的程度”}
+$$<p>只要能找到这个新目标（也称“罚函数”）的最小值，就可以求解出符合原问题要求的解．︀</p>
+<blockquote>
+<p>需要注意，优化问题算法多为数值求解方法，并不是直接求出原问题的精确解析解，例如这里就是一种近似求解的方法．︀</p>
+<p>有些特定的优化问题可以直接求出解析解．</p></blockquote>
+<p>很显然，这里最困难的就是如何去量化“违反约束的程度”<del>（文章灌水的点）</del>．︀量化方法其实非常多，已经超出了本文的范畴，这里我们仅介绍一种最常用的形式，二次罚函数：</p>
+$$
+F(x,\rho)=
+\begin{cases}
+f(x), & g(x)\le 0 \\[6pt]
+f(x)+ \rho\,g(x)^2, & g(x)>0
+\end{cases}
+$$<p>虽然看起来很复杂，但其实很简单，$F(x,\rho)$ 就是希望求出最小值的罚函数，这里写为分段函数的意思就是，如果 $g(x)\le0$，说明满足要求，不罚；如果 $g(x) > 0$，说明不符合要求，该罚！因此还可以进一步简写为：</p>
+$$
+F(x, \rho)= f(x) + \rho (\max(0,g(x)))^2
+$$<blockquote>
+<p>深入思考的话，还有一个有意思的点，为什么常用平方项 $g(x)^2$ 而非 $g(x)$ 或 $|g(x)|$？</p>
+<p>$g(x)$ 肯定是不对的．︀如果 $g(x)<0$，会让目标变小，这显然不符合逻辑；$|g(x)|$ 其实也可以用，后面我们会看到一个实际的例子．︀不过 $g(x)^2$ 与 $|g(x)|$ 相比，$g(x)^2$ 既可以让大的误差被强烈放大，又在零点光滑可导，因而方便工程求解．︀</p></blockquote>
+<h3 id="一个实际的例子lasso-回归问题">一个实际的例子，LASSO 回归问题<a hidden class="anchor" aria-hidden="true" href="#一个实际的例子lasso-回归问题">#</a></h3>
+<p>LASSO（Least Absolute Shrinkage and Selection Operator）是机器学习中非常经典的一种回归模型．︀它和普通的线性回归几乎一样，只是多了一个限制条件，希望模型参数不要太大．︀</p>
+<p>我们举一个实际的例子，假设我们在研究如何预测一个地区的房价，为了实现这一点，我们提前调研了相当多的变量：</p>
+<ul>
+<li>房屋面积</li>
+<li>地铁距离</li>
+<li>房龄</li>
+<li>楼层</li>
+<li>小区绿化</li>
+<li>附近学校</li>
+<li>商场距离</li>
+<li>医院距离</li>
+<li>噪音</li>
+</ul>
+<p>假设我们收集了包含上述变量在内的 100 个变量，希望用线性模型预测：</p>
+$$
+y = β_0 + β_1x_1 + β_2x_2 + ... + β_px_p
+$$<p>如果按照最小二乘法，我们希望：</p>
+$$
+\min \sum_i (\text{真实值}_i-\text{预测值}_i)^2
+$$<p>用更数学的语言，是最小化残差平方和</p>
+$$
+\min_w \sum_{i=1}^n (y_i - x_i^\top \beta)^2
+$$<p>于是我们会得到一个笨重的、包含 100 个变量的模型．︀这就有了一个问题，虽然房价可能受很多因素影响，但有些因素可能影响非常小（例如表现为系数非常小），其实是没有必要的噪声．︀</p>
+<p>LASSO 就是为了在保证拟合效果尽量好的同时，尽量让模型“简单一点”而被引入的．︀LASSO 认为，参数太多、太大的模型往往容易过拟合，因此，希望大部分系数都尽量接近 $0$，最好直接变成 $0$．︀如何实现这一点呢？引入约束：限制所有参数绝对值之和（L1 范数）：</p>
+$$
+\sum_j |β_j| = |β_1| + |β_2| + ... + |β_p|
+$$<p>于是问题变成：</p>
+$$
+\min \sum_i (\text{真实值}_i-\text{预测值}_i)^2
+\quad
+\text{s.t. }
+\sum_j |β_j| \le t
+$$<p>这就是一个典型的有约束最优化问题．︀根据前面讲过的罚函数法，我们完全可以不直接处理约束，而是把“违反约束”这件事变成一种惩罚，加入目标函数中，于是就得到 LASSO 更常见的写法：</p>
+$$
+\min \sum_i (\text{真实值}_i-\text{预测值}_i)^2 + \lambda \sum_j |w_j|
+$$<p>从而把“约束优化问题”经过罚函数思想改写后得到的一个无约束问题：</p>
+$$
+\min_w \sum_{i=1}^n (y_i - x_i^\top \beta)^2
++
+\lambda \sum_{j=1}^p |\beta_j|
+$$<blockquote>
+<p>前面介绍罚函数法时，我们举的是二次罚函数，而 LASSO 里面用的不是平方项，而是绝对值之和．︀这就是前面提到的，罚函数并不只有一种形式．︀只要某一项能够表达“我不希望某种情况发生”，它就可以作为罚项．︀</p>
+<p>这里深入思考就会引入新问题，为什么 LASSO 可以让小系数更可能变为零呢？</p>
+<p>问题的关键，就在于零点附近不光滑的绝对值运算上，这个“尖角”会带来一种很强的往 0 拉的效果，而平滑的平方项通常不会把系数精确地压到 $0$．︀</p>
+<p>事实上，也有平方项做罚项的回归方法，称为 Ridge 回归．︀</p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/%E5%88%A9%E7%94%A8-digital-true-%E5%AE%9E%E7%8E%B0%E6%B7%B1%E5%B1%82%E7%BB%84%E7%BB%87%E8%8D%A7%E5%85%89%E6%88%90%E5%83%8F/">
+    <span class="title">Next »</span>
+    <br>
+    <span>NC | 利用 Digital TRUE 实现深层组织聚焦荧光成像</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Yuyang Wang&#39;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

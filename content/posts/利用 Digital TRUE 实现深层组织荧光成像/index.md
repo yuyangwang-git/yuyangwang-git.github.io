@@ -1,5 +1,5 @@
 ---
-title: "利用 Digital TRUE 实现深层组织聚焦荧光成像"
+title: "NC | 利用 Digital TRUE 实现深层组织聚焦荧光成像"
 date: 2025-11-24T16:08:52+08:00
 draft: false
 
